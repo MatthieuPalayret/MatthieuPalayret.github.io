@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- place fav icons here -->
+
+  <title>Bienvenue à la Chapelle Matisse !</title>
+  <meta name="description" content="Audio-guide pour visiter la Chapelle Matisse des soeurs dominicaines de Vence.">
+
+  <!-- Twitter cards and OG Image for Facebook -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:creator" content="" />
+  <meta name="twitter:title" content="Bienvenue à la Chapelle Matisse !" />
+  <meta name="twitter:description" content="Audio-guide pour visiter la Chapelle Matisse des soeurs dominicaines de Vence." />
+  
+  <meta name="og:image" content="http://chapellematisse.com/assets/img/meta/og-image.jpg" />
+  <meta name="twitter:image" content="http://chapellematisse.com/assets/img/meta/og-image.jpg" />
+
+  <!-- Canonical urls -->
+
+  <link rel="canonical" href="http://chapellematisse.com/stops/1/">
+  <link rel="alternate" type="application/rss+xml" title="Audio-guide de la Chapelle Matisse de Vence" href="http://chapellematisse.com/feed.xml">
+
+  <!-- Stylesheets -->
+
+  <link rel="stylesheet" type="text/css" href="/assets/js/slick.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/js/slick-theme.css" />
+
+  <!-- jQuery -->
+  <script src="/assets/js/jquery-1.12.3.min.js"></script>
+  <script src="/assets/js/slick.min.js"></script>
+
+  <!-- jPlayer -->
+  <script src="/assets/js/jplayer/jquery.jplayer.min.js"></script>
+
+  <!-- CSS for this web app -->
+  <link rel='stylesheet' href='/assets/css/main.css?v=1.0.0.1'>
+
+  <script type="text/javascript">
+
+// The JS code here is render blocking. We liked it this way, but you might want to change it if this sort of thing
+// worries you. More info on this here: https://varvy.com/pagespeed/render-blocking.html
+// The advantage of render blocking the below code is to prevent some flicker on page-load to make the audio guide
+// feel a little more 'app-like', but you mightn't find it necessary.
+
+
+// add fixedPosition support check, pulled from jQuery Mobile
+// This isn't a true check, but just flagging browsers with known issues with fixed positioning.
+// This is preferable to attempting to do a real check given the current widespread support for
+// Fixed positioning, so the devices that still have problems with it are fairly well known
+
+function fixedPosition() {
+  var w = window,
+    ua = navigator.userAgent,
+    platform = navigator.platform,
+    // Rendering engine is Webkit, and capture major version
+    wkmatch = ua.match( /AppleWebKit\/([0-9]+)/ ),
+    wkversion = !!wkmatch && wkmatch[ 1 ],
+    ffmatch = ua.match( /Fennec\/([0-9]+)/ ),
+    ffversion = !!ffmatch && ffmatch[ 1 ],
+    operammobilematch = ua.match( /Opera Mobi\/([0-9]+)/ ),
+    omversion = !!operammobilematch && operammobilematch[ 1 ];
+
+  if (
+    // iOS 4.3 and older : Platform is iPhone/Pad/Touch and Webkit version is less than 534 (ios5)
+    ( ( platform.indexOf( "iPhone" ) > -1 || platform.indexOf( "iPad" ) > -1  || platform.indexOf( "iPod" ) > -1 ) && wkversion && wkversion < 534 ) ||
+    // Opera Mini
+    ( w.operamini && ({}).toString.call( w.operamini ) === "[object OperaMini]" ) ||
+    ( operammobilematch && omversion < 7458 ) ||
+    //Android lte 2.1: Platform is Android and Webkit version is less than 533 (Android 2.2)
+    ( ua.indexOf( "Android" ) > -1 && wkversion && wkversion < 533 ) ||
+    // Firefox Mobile before 6.0 -
+    ( ffversion && ffversion < 6 ) ||
+    // WebOS less than 3
+    ( "palmGetResource" in window && wkversion && wkversion < 534 ) ||
+    // MeeGo
+    ( ua.indexOf( "MeeGo" ) > -1 && ua.indexOf( "NokiaBrowser/8.5.0" ) > -1 ) ) {
+    return false;
+  }
+
+  return true;
+}
+
+$.extend( $.support, {
+  fixedPosition: fixedPosition()
+});
+
+// fixed position audio player
+
+if ($.support.fixedPosition) {
+ $("<style>").prop("type", "text/css").html("\
+    .audio-footer-container { \
+      position: fixed; \
+    }")
+  .appendTo("head");
+}
+
+// Prevent links from opening in a new window when viewing from iOS home screen
+// Helps ensure a more 'web appy' expierence.
+// Adjusted from gist posted by Github user @irae on @kylebarrow's Gist at:
+// https://gist.github.com/kylebarrow/1042026
+// this snippet available at: https://gist.github.com/irae/1042167
+// It's a whole document event listener, so will continue to work even if other links are added to the DOM after
+// the initial pageload. The while loop ensures that it bubbles up to hit any anchor links that have been clicked.
+
+  (function(document,navigator,standalone) {
+    // prevents links from apps from oppening in mobile safari
+    // this javascript must be the first script in your <head>
+    if ((standalone in navigator) && navigator[standalone]) {
+      var curnode, location=document.location, stop=/^(a|html)$/i;
+      document.addEventListener('click', function(e) {
+        curnode=e.target;
+        
+        while (!(stop).test(curnode.nodeName)) {
+          curnode=curnode.parentNode;
+        }
+        // Condidions to do this only on links to your own app
+        // if you want all links, use if('href' in curnode) instead.
+        if (curnode.className.indexOf("dont-use-ios-override") == -1) {
+          if(
+            'href' in curnode && // is a link
+            (chref=curnode.href).replace(location.href,'').indexOf('#') && // is not an anchor
+            ( !(/^[a-z\+\.\-]+:/i).test(chref) ||                       // either does not have a proper scheme (relative links)
+              chref.indexOf(location.protocol+'//'+location.host)===0 ) // or is in the same protocol and domain
+          ) {
+            e.preventDefault();
+            location.href = curnode.href;
+          }
+        }
+      },false);
+    }
+  })(document,window.navigator,'standalone');
+
+// Initialise jPlayer, grabbed the MP3 source file from the audio element on the page.
+$(document).ready(function(){
+
+  $("#jquery_jplayer_1").jPlayer({
+    ready: function () {
+      $("#episode-element").hide();
+      $(this).jPlayer("setMedia", {
+        title: "",
+        mp3: $("#episode-source").attr("src")
+      });
+
+    },
+    swfPath: "/assets/js/jplayer",
+    supplied: "mp3",
+    wmode: "window",
+    useStateClassSkin: true,
+    autoBlur: false,
+    smoothPlayBar: true,
+    keyEnabled: true,
+    remainingDuration: true,
+    toggleDuration: true
+  });
+});
+
+  </script>
+    <!-- JS for this web app -->
+  <script src="/assets/js/main.js?v=1.0.0.1"></script>
+</head>
+
+
+  <body>
+    <!-- Google Tag Manager -->
+
+<!-- drop in your Google Tag Manager or Analytics snippet here! -->
+
+<!-- End Google Tag Manager -->
+    <header class="site-header">
+
+  <div class="site-header-wrapper">
+    
+    
+    <a class="site-header-back-button" href="/">
+      <img src="/assets/img/icons/button_back.png"/>
+    </a>
+    
+    <a class="site-title" href="/">
+      <img src="/assets/img/logo/audio-guide.png" alt="Audio-guide de la Chapelle Matisse de Vence logo" class="site-logo"/>
+    </a>
+
+    <a class="site-header-menu-button dont-use-ios-override" href="/">
+      <img src="/assets/img/icons/menu_icon.png"/>
+    </a>
+
+  </div>
+
+</header>
+
+    <div class="slide-menu">
+  <h2>Choisissez un nouvel arrêt</h2>
+  <ul class="post-list">
+    
+    <li>
+        <a class="post-link" href="/stops/1/" style="background-image: url('/assets/img/icons/headphones-dark.png');">
+          <span class="post-item">1</span>
+        </a>
+      </li><li>
+        <a class="post-link" href="/stops/2/" style="background-image: url('/assets/img/icons/headphones-dark.png');">
+          <span class="post-item">2</span>
+        </a>
+      </li>
+  </ul>
+</div>
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <div class="post-title-episode">
+      <div class="post-header-stop-id" style="background-image: url('/assets/img/icons/headphones-light.png');"><span>1</span></div>
+      
+        <h2 class="post-header-section-title">Bienvenue !</h1>
+      
+      
+        <h3 class="post-header-title">Bienvenue à la Chapelle Matisse !</h2>
+      
+    </div>
+  </header>
+  
+    <div class="slick-container post-hero-image-container">
+      <div class="slick-post-hero-image">
+        
+          <div class="post-hero-image">    
+            <img src="/assets/img/stops/01-Bienvenue01.jpg" alt="Vue extérieure de la Chapelle"/>
+          </div>
+        
+          <div class="post-hero-image">    
+            <img src="/assets/img/stops/01-Bienvenue02.jpg" alt="Vue extérieure de la Chapelle"/>
+          </div>
+        
+      </div>
+    </div>
+  
+  <div class="post-content">
+    <p>Bienvenue à la chapelle Matisse. Frère Charles vous invite à un premier coup d’oeil…</p>
+
+<h2 id="fr-charles-desjobert-op">fr. <a href="https://www.youtube.com/watch?v=q-YWFCqArac">Charles Desjobert</a>, op</h2>
+
+<blockquote>
+  <p>Dans les années 1930, la distance qui existe entre l’Eglise et la modernité, entre l’Eglise et la société est particulièrement criante, notamment dans le domaine artistique. L’Eglise a ses propres artistes, architectes, mais tous les grands noms de l’Art Moderne semblent absents des commandes de l’institution. Alors, oui, il y a Maurice Denis, mais les Monnet, Mannet, Gauguin, Cézanne, à tout ceux-là, l’Eglise ne demande rien. Alors comment l’architecture chrétienne peut-elle encore être avant-gardiste ? être de son temps, pleinement ? Le père Couturier, un frère dominicain, peintre, et directeur de la revue Art Sacré, va mettre toute son énergie à ce renouveau de l’art chrétien. Mais sans plus attendre, partons à la découverte de cette oeuvre majeur du XXème siècle, la chapelle Notre-Dame-du-Rosaire, à Vence, construite par Matisse pour les soeurs Dominicaines de Monteil, et surnommée souvent la chapelle Matisse.</p>
+</blockquote>
+
+<blockquote>
+  <p>Depuis la route qui serpente vers les hauteurs de Vence, vers le Baou des Blancs, on ne perçoit de la chapelle Matisse qu’une toiture de tuiles vernissées très simples, bleues et blanches, et la grande croix, une croix de 13 mètres de haut, qui vient se poser délicatement sur le toit de la chapelle, comme une esquisse à main levée. On s’approche de la chapelle et on y entre par une porte toute simple, blanche, surmontée de la Vierge à l’Enfant et du visage de saint Dominique. On descend par un escalier très étroit et on entre dans un espace vaste, une grande pièce blanche. Comme si on entrait dans l’épaisseur d’un tableau, entre la lumière, la couleur d’un côté, les traits et le dessin de l’autre. Il y a comme deux côtés dans cette chapelle. D’un côté les vitraux colorés, de l’autre les traits en noir et blanc. Les vitraux, 15 grandes baies avec des couleurs multiples, le bleu outre-mer, un jaune citron, plutôt translucide, et puis un vert émeraude qui laisse passer le regard jusqu’à la ville de Vence de l’autre côté de la vallée. Ces vitraux sont presque comme des rideaux. On a l’impression qu’ils bougent, qu’ils sont mouvants, qu’ils sont simplement suspendus, et ils dessinent comme des feuilles qui montent vers les hauteurs.</p>
+</blockquote>
+
+<blockquote>
+  <p>Face à la couleur, des grandes céramiques, des traits noir et blanc, très simples avec trois grandes scènes représentées : d’un côté saint Dominique, le fondateur des dominicaines ; la Vierge à l’Enfant, la patronne du Rosaire, et puis, tout au fond de l’église, le chemin de croix. Saint Dominique, très grand, tient dans sa main l’Evangile de saint Matthieu, avec une main en forme de flamme qui semble déjà embraser le monde par la lumière de l’Evangile. A côté, la Vierge à l’Enfant, des traits très simples et cet Enfant qui semble presque s’ouvrir au monde, comme si la Vierge le donnait, alors que ses bras font déjà penser à la Croix. Tout autour de Marie, comme une multitude de fleurs, les roses du Rosaire. Enfin, au fond, avec des traits plus saccadés, une vraie passion, on a le Chemin de Croix. La difficulté de cette montée du Christ jusqu’à la croix et jusqu’au tombeau. Mais déjà pointe la lumière de la Résurrection, et il faut aller de l’autre côté de la chapelle et se tourner vers le vitrail qui est tout au fond, l’arbre de vie, qui est représenté par Matisse par un figuier de barbarie, qui donne des fleurs, même dans le désert.</p>
+</blockquote>
+
+<blockquote>
+  <p>Au milieu de toute cette composition, l’autel, avec cette couleur chaude de la pierre de Rogne, très poreuse, presque comme de la mie de pain. Elle vient nous rappeler la simplicité du pain et du vin présentés dans l’Eucharistie, au milieu de ce grand espace blanc. Cet autel d’ailleurs est particulièrement étonnant. Bien qu’on soit avant la réforme liturgique, comme on n’est pas dans une chapelle paroissiale mais dans une chapelle privée, conventuelle, on peut se permettre des dispositions inhabituelles. Le prêtre va célébrer face aux fidèles et face aux religieuses. Matisse disait : « J’aimerai que tous ceux qui entrent dans cette chapelle se sentent déchargés de leurs fardeaux ».</p>
+</blockquote>
+
+<blockquote>
+  <p>Pourquoi être allé charger Matisse comme architecte alors qu’il est peintre ? L’histoire est un peu étonnante et cela vaut le coup que je vous la raconte en détail. Matisse s’était installé dans le sud de la France à Nice, pendant la guerre, à cause de la guerre, où il va faire connaissance d’une certaine Monique Bourgeois, qui va devenir son infirmière avant de poser pour lui comme modèle. Alors quelle ne va pas être la surprise de Matisse quand il apprend que Monique Bourgeois décide d’entrer au couvent ! Providentiellement, quelques années plus tard, ils vont se retrouver tous les deux à Vence, et la communauté de soeur Jacques-Marie, c’est le nom de Monique en religion, va vouloir construire une chapelle : c’est Matisse qui la construira, le frère Résiguier en sera l’architecte et il cherchera à ne pas céder un pouce de l’ambiance chrétienne et à garder le maximum de Matisse.</p>
+</blockquote>
+
+<p>Nous vous invitons maintenant à vous tourner vers les grandes céramiques de Saint Dominique et de la Vierge à l’enfant, sur votre droite quand vous êtes entrés dans la chapelle, puis à passer aux explications suivantes.</p>
+
+
+  </div>
+
+</article>
+
+  
+  
+  
+
+      </div>
+    </div>
+
+<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+  <div class="jp-gui jp-interface audio-footer-container" data-role="footer" data-position="fixed" data-tap-toggle="false">
+    <div class="audio-player">
+      
+      <div class="player-now-playing">
+        <p>
+        Bienvenue à la Chapelle Matisse !
+        </p>
+      </div>
+
+      
+      <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+      <div id="episode-element">
+        <audio>
+          <source id="episode-source" src="/audio/Presentation_Charles_Desjobert.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div class="jp-progress">
+        <div class="jp-seek-bar">
+          <div class="jp-play-bar"></div>
+        </div>
+      </div>
+          
+      <div class="jp-no-solution">
+        <span>Update Required</span>
+        To play audio, be sure to enable JavaScript, and run a browser that supports HTML5 MP3 audio, or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+      </div>
+
+      
+      
+      <div class="player-buttons">
+        <div class="player-buttons-prev">
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+        </div>
+
+        
+        <div class="jp-controls" style="display: inline-block; text-align: center;">
+          <button class="jp-play" role="button" tabindex="0" style="display: inline-block;"></button>
+        </div>
+        
+
+        <div class="player-buttons-next">
+          
+            
+            
+            
+          
+            
+            
+            
+              <a href="/stops/2/"></a>
+              <span class="player-buttons-next-number">2</span>
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  </div>
+
+  </body>
+
+</html>
