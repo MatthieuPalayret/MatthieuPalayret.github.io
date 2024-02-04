@@ -23,9 +23,6 @@
   <script src="/assets/js/jquery-1.12.3.min.js"></script>
   <script src="/assets/js/slick.min.js"></script>
 
-  <!-- JS for this web app -->
-  <script src="/assets/js/main.js?v=1.0.0.1"></script>
-
   <!-- CSS for this web app -->
   <link rel='stylesheet' href='/assets/css/main.css?v=1.0.0.1'>
 
@@ -94,7 +91,7 @@ function docReady(fn) {
         }
 
         var html5QrcodeScanner = new Html5QrcodeScanner(
-            "qr-reader", { fps: 10, qrbox: 250, formatsToSupport: Html5QrcodeSupportedFormats.EAN_13 });
+            "qr-reader", { fps: 10, qrbox: 250 });
         html5QrcodeScanner.render(onScanSuccess);
     });
 </script>
