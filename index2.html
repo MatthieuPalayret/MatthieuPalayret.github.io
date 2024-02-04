@@ -83,7 +83,7 @@
     });
 
 	function checkForRedirect(url) {
- return fetch(url, { method: 'HEAD' })
+ return fetch(url, { method: 'HEAD', mode: 'no-cors' })
     .then(response => {
 if (response.ok) {
       return response.text();
