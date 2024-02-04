@@ -88,17 +88,16 @@
 		// Get the title
 		const pageTitle = await page.title();
     console.log('Page Title:', pageTitle);
+			 if(pageTitle.includes("Searching")) {
+		  return null;
+	  } else {
+		  return url;
+	  }
 	  
     // Close the window after performing operations
 await page.close();
 await browser.close();
-			})();
-		
-	  if(pageTitle.includes("Searching")) {
-		  return url;
-	  } else {
-		  return null;
-	  }    
+			})();    
   }
 
 </script>
