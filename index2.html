@@ -46,7 +46,7 @@
 
 		var url="https://opac.diamond-ils.org/search/q?simple_search=all&onomastic=all&q="+decodedText+"&start_date=&end_date=";
 		var linkElement = document.createElement("a");
-		linkElement.href=redirectUrl;
+		linkElement.href=url;
 		linkElement.textContent="Do we have it? - "+decodedText;
 		resultContainer.appendChild(linkElement);	
 		    
