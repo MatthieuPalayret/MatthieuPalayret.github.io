@@ -69,19 +69,7 @@
     });
 
 	function checkForRedirect(url) {
-  return fetch(url, { method: 'HEAD' })
-    .then(response => {
-	    var initialUrl = window.location.href;
-	    setTimeout(function() {
-  var redirectedUrl = window.location.href;
-
-  if (initialUrl !== redirectedUrl) {
-    return response.headers.get('Location');
-  } else {
-    return null;
-  }
-}, 2000);
-});
+  return true;
 	  }
 </script>
 </head>
