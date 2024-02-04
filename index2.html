@@ -49,7 +49,7 @@
   			.then(redirectUrl => {
 				if (redirectUrl) {
       var linkElement = document.createElement("a");
-		linkElement.href=redirectUrl;
+		linkElement.href=url;//redirectUrl;
 		linkElement.textContent="We have it! - "+decodedText;
 		resultContainer.appendChild(linkElement);
     } else {
@@ -69,7 +69,7 @@
     });
 
 	function checkForRedirect(url) {
-  return true;
+  return url;
 	  }
 </script>
 </head>
