@@ -35,14 +35,15 @@
     }
 
     docReady(function () {
-        var resultContainer = document.getElementById('qr-reader-results');
+        var resultContainer = document.getElementById("qr-reader-results");
         var lastResult, countResults = 0;
         function onScanSuccess(decodedText, decodedResult) {
             if (decodedText !== lastResult) {
                 ++countResults;
                 lastResult = decodedText;
                 // Handle on success condition with the decoded message.
-                console.log(`Scan result ${decodedText}`, decodedResult);
+                console.log("Scan result ${decodedText}", decodedResult);
+		    resultContainer.innerHTML=decodedResult;
 
 		// html5QrcodeScanner.clear();
     		// ^ this will stop the scanner (video feed) and clear the scan area.
