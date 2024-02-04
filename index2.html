@@ -34,18 +34,6 @@
     <!-- JS for this web app -->
   <script src="/assets/js/main.js?v=1.0.0.1"></script>
 
-<script src="https://unpkg.com/html5-qrcode@2.0.9/dist/html5-qrcode.min.js"></script>
-
-<script type="text/javascript">
-/** Initialisation code comes here */
-function onScanSuccess(decodedText, decodedResult) {
-    console.log(`Code scanned = ${decodedText}`, decodedResult);
-}
-var html5QrcodeScanner = new Html5QrcodeScanner(
-	"qr-reader", { fps: 10, qrbox: 250 });
-html5QrcodeScanner.render(onScanSuccess);
-</script>
-
     
 </head>
 
@@ -98,6 +86,18 @@ Title: Jeux de la lumière dans les vitraux
 </div>
 
 <div id="qr-reader" style="width: 600px"></div>
+
+	      <script src="https://unpkg.com/html5-qrcode@2.0.9/dist/html5-qrcode.min.js"></script>
+
+<script type="text/javascript">
+/** Initialisation code comes here */
+function onScanSuccess(decodedText, decodedResult) {
+    console.log(`Code scanned = ${decodedText}`, decodedResult);
+}
+var html5QrcodeScanner = new Html5QrcodeScanner(
+	"qr-reader", { fps: 10, qrbox: 250 });
+html5QrcodeScanner.render(onScanSuccess);
+</script>
         
       </div>
     </div>
