@@ -19,10 +19,6 @@
   <link rel="stylesheet" type="text/css" href="/assets/js/slick.css" />
   <link rel="stylesheet" type="text/css" href="/assets/js/slick-theme.css" />
 
-  <!-- jQuery -->
-  <script src="/assets/js/jquery-1.12.3.min.js"></script>
-  <script src="/assets/js/slick.min.js"></script>
-
   <!-- CSS for this web app -->
   <link rel='stylesheet' href='/assets/css/main.css?v=1.0.0.1'>
 
@@ -91,7 +87,7 @@ function docReady(fn) {
         }
 
         var html5QrcodeScanner = new Html5QrcodeScanner(
-            "qr-reader", { fps: 10, qrbox: 250, formatsToSupport: "EAN_13" });
+            "qr-reader", { fps: 10, qrbox: 250 });
         html5QrcodeScanner.render(onScanSuccess);
     });
 </script>
