@@ -69,6 +69,8 @@
     });
 
 	function checkForRedirect(url) {
+		var retour = null;
+		
 		// Set up Puppeteer
 		const puppeteer = require('puppeteer');
 
@@ -81,23 +83,28 @@
 
 		// Launch the browser and open the window
 		(async () => {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage(options);
+  const browser = await puppeteer.launch({ headless: true });
+  try {
+			const page = await browser.newPage(options);
   await page.goto(url);
 
 		// Get the title
 		const pageTitle = await page.title();
     console.log('Page Title:', pageTitle);
 			 if(pageTitle.includes("Searching")) {
-		  return null;
+		  retour=null;
 	  } else {
-		  return url;
+		  retour=url;
 	  }
-	  
+  } catch (error) {
+	  console.error('Error:', error);
+  } finally { 
     // Close the window after performing operations
 await page.close();
 await browser.close();
-			})();    
+  }
+			})();
+		return retour;
   }
 
 </script>
