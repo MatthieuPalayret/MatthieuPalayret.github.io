@@ -54,9 +54,21 @@
 		resultContainer.appendChild(linkElement);
     } else {
       resultContainer.innerHTML="We don't have it... - "+decodedText
-	      +fetch(url, { method: 'HEAD' }).then(response => {
-		      response.headers.get("title");});
+	      +fetch(url, { method: 'HEAD' }).text().then(html => {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+
+    // Get the title element
+    const titleElement = doc.querySelector('head title');
+
+    if (titleElement) {
+		return titleElement.textContent;
+    } else {
+	    return null;
     }
+		  }
+													 );
+				}
   });
 		
 		    
@@ -73,14 +85,29 @@
 	function checkForRedirect(url) {
  return fetch(url, { method: 'HEAD' })
     .then(response => {
-	    var ogUrlMetaTag = response.headers.get("title").includes("Searching");
-      if (ogUrlMetaTag) {
-        // The URL redirects to another one
-        return null;
-      } else {
-        // The URL does not redirect
-        return url;
-      }
+if (response.ok) {
+      return response.text();
+    } else {
+      throw new Error('Error:', response.status, response.statusText);
+    }
+  })
+  .then(html => {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+
+    // Get the title element
+    const titleElement = doc.querySelector('head title');
+
+    if (titleElement) {
+      console.log('Title:', titleElement.textContent);
+	    if(titleElement.textContent.includes("Searching")) {
+		    return url;
+	    } else {
+		    return null;
+    } else {
+      console.log('Title element not found in the HTML.');
+	    return null;
+    }
     })
     .catch(error => {
       console.error('Error checking for redirect:', error);
