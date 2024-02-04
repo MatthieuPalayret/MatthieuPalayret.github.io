@@ -26,9 +26,6 @@
   <!-- CSS for this web app -->
   <link rel='stylesheet' href='/assets/css/main.css?v=1.0.0.1'>
 
-    <!-- JS for this web app -->
-  <script src="/assets/js/main.js?v=1.0.0.1"></script>
-
 </head>
 
 <body>
@@ -87,11 +84,14 @@ function docReady(fn) {
                 lastResult = decodedText;
                 // Handle on success condition with the decoded message.
                 console.log(`Scan result ${decodedText}`, decodedResult);
+
+		html5QrcodeScanner.clear();
+    		// ^ this will stop the scanner (video feed) and clear the scan area.
             }
         }
 
         var html5QrcodeScanner = new Html5QrcodeScanner(
-            "qr-reader", { fps: 10, qrbox: 250 });
+            "qr-reader", { fps: 10, qrbox: 250, formatsToSupport: Html5QrcodeSupportedFormats.EAN_13 });
         html5QrcodeScanner.render(onScanSuccess);
     });
 </script>
