@@ -45,18 +45,10 @@
                 console.log("Scan result ${decodedText}", decodedResult);
 
 		var url="https://opac.diamond-ils.org/search/q?simple_search=all&onomastic=all&q="+decodedText+"&start_date=&end_date=";
-		checkForRedirect(url)
-  			.then(redirectUrl => {
-				if (redirectUrl) {
-      var linkElement = document.createElement("a");
+		var linkElement = document.createElement("a");
 		linkElement.href=redirectUrl;
-		linkElement.textContent="We have it! - "+decodedText;
-		resultContainer.appendChild(linkElement);
-    } else {
-      resultContainer.innerHTML="We don't have it... - "+decodedText;
-	}
-  });
-		
+		linkElement.textContent="Do we have it? - "+decodedText;
+		resultContainer.appendChild(linkElement);	
 		    
 		// html5QrcodeScanner.clear();
     		// ^ this will stop the scanner (video feed) and clear the scan area.
@@ -67,45 +59,6 @@
             "qr-reader", { fps: 10, qrbox: 250, format: 9 });
         html5QrcodeScanner.render(onScanSuccess);
     });
-
-	function checkForRedirect(url) {
-		var retour = null;
-		
-		// Set up Puppeteer
-		const puppeteer = require('puppeteer');
-
-		// Define invisible window options
-		const options = {
-  width: 1,
-  height: 1,
-  show: false, // Makes the window invisible
-};
-
-		// Launch the browser and open the window
-		(async () => {
-  const browser = await puppeteer.launch({ headless: true });
-  try {
-			const page = await browser.newPage(options);
-  await page.goto(url);
-
-		// Get the title
-		const pageTitle = await page.title();
-    console.log('Page Title:', pageTitle);
-			 if(pageTitle.includes("Searching")) {
-		  retour=null;
-	  } else {
-		  retour=url;
-	  }
-  } catch (error) {
-	  console.error('Error:', error);
-  } finally { 
-    // Close the window after performing operations
-await page.close();
-await browser.close();
-  }
-			})();
-		return retour;
-  }
 
 </script>
 </head>
