@@ -71,17 +71,16 @@
 	function checkForRedirect(url) {
   return fetch(url, { method: 'HEAD' })
     .then(response => {
-      if (response.status >= 300 && response.status < 400) {
-        // The URL redirects to another one
-        return response.headers.get('Location');
-      } else {
-        // The URL does not redirect
-        return null;
-      }
-    })
-    .catch(error => {
-      console.error('Error checking for redirect:', error);
-    });
+	    var initialUrl = window.location.href;
+	    setTimeout(function() {
+  var redirectedUrl = window.location.href;
+
+  if (initialUrl !== redirectedUrl) {
+    return response.headers.get('Location');
+  } else {
+    return null;
+  }
+}, 2000);
 }
 </script>
 </head>
