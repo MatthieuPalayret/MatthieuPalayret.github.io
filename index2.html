@@ -43,10 +43,20 @@
                 lastResult = decodedText;
                 // Handle on success condition with the decoded message.
                 console.log("Scan result ${decodedText}", decodedResult);
-		var linkElement = document.createElement("a");
-		linkElement.href="https://opac.diamond-ils.org/search/q?simple_search=all&onomastic=all&q="+decodedText+"&start_date=&end_date=";
-		linkElement.textContent=decodedText;
+
+		var url="https://opac.diamond-ils.org/search/q?simple_search=all&onomastic=all&q="+decodedText+"&start_date=&end_date=";
+		checkForRedirect(url)
+  			.then(redirectUrl => {
+				if (redirectUrl) {
+      var linkElement = document.createElement("a");
+		linkElement.href=redirectUrl;
+		linkElement.textContent="We have it! - "+decodedText;
 		resultContainer.appendChild(linkElement);
+    } else {
+      resultContainer.innerHTML="We don't have it... - "+decodedText;
+    }
+  });
+		
 		    
 		// html5QrcodeScanner.clear();
     		// ^ this will stop the scanner (video feed) and clear the scan area.
@@ -57,6 +67,22 @@
             "qr-reader", { fps: 10, qrbox: 250 });
         html5QrcodeScanner.render(onScanSuccess);
     });
+
+	function checkForRedirect(url) {
+  return fetch(url, { method: 'HEAD', redirect: 'manual' })
+    .then(response => {
+      if (response.headers.has('Location')) {
+        // The URL redirects to another one
+        return response.headers.get('Location');
+      } else {
+        // The URL does not redirect
+        return null;
+      }
+    })
+    .catch(error => {
+      console.error('Error checking for redirect:', error);
+    });
+}
 </script>
 </head>
 </html>
