@@ -1,65 +1,21 @@
 <!DOCTYPE html>
 <html>
-
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-touch-fullscreen" content="yes">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-  <!-- place fav icons here -->
-
-  <title>ISBN scanner for the Book Fair</title>
-
-  <!-- Stylesheets -->
-
-  <link rel="stylesheet" type="text/css" href="/assets/js/slick.css" />
-  <link rel="stylesheet" type="text/css" href="/assets/js/slick-theme.css" />
-
-  <!-- CSS for this web app -->
-  <link rel='stylesheet' href='/assets/css/main.css?v=1.0.0.1'>
-
-
+<head>
+	<title>ISBN scanner for the Book Fair</title>
+	
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="/assets/js/slick.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/js/slick-theme.css" />
+	
+	<!-- CSS for this web app -->
+	<link rel='stylesheet' href='/assets/css/main.css?v=1.0.0.1'>
 <body>
-	<header class="site-header">
-	</header>
-
-
-    <div class="page-content main-page">
-      <div class="wrapper">
-        <div class="home">
-
-		<div id="qr-reader" style="width: 600px"></div>
-		<div id="qr-reader-results"></div>
-  
-	</div>
-      </div>
-    </div>
-
-    <footer class="site-footer">
-
-  <div class="wrapper">
-
-    <div class="partner-logos">
-      <!-- replace logos here! -->
-      <a href="http://chapellematisse.com/index.html" target="_blank">
-        <img class="logo" src="/assets/img/logo/chapelleMatisse.png"/>
-      </a>
-    </div>
-  </div>
-
-</footer>
-
-
-  </body>
-
-	<script src="https://unpkg.com/html5-qrcode@2.0.9/dist/html5-qrcode.min.js"></script>
-
-<script type="text/javascript">
-function docReady(fn) {
+    <div id="qr-reader" style="width:500px"></div>
+    <div id="qr-reader-results"></div>
+</body>
+<script src="/html5-qrcode.min.js"></script>
+<script>
+    function docReady(fn) {
         // see if DOM is already available
         if (document.readyState === "complete"
             || document.readyState === "interactive") {
@@ -90,6 +46,5 @@ function docReady(fn) {
         html5QrcodeScanner.render(onScanSuccess);
     });
 </script>
-
-  </head>
+</head>
 </html>
