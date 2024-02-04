@@ -71,13 +71,13 @@
 	function checkForRedirect(url) {
  return fetch(url, { method: 'HEAD' })
     .then(response => {
-	    var ogUrlMetaTag = response.headers.querySelector('meta[property="og:url"][content*="manifestation"]');
+	    var ogUrlMetaTag = response.headers.title.includes("Searching");
       if (ogUrlMetaTag) {
         // The URL redirects to another one
-        return url;
+        return null;
       } else {
         // The URL does not redirect
-        return null;
+        return url;
       }
     })
     .catch(error => {
