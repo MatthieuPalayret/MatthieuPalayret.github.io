@@ -69,33 +69,38 @@
     });
 
 	function checkForRedirect(url) {
- // Open a new window silently
-const newWindow = window.open('', '_blank', 'width=0,height=0');
+		// Set up Puppeteer
+		const puppeteer = require('puppeteer');
 
-// Check if the new window was successfully opened
-if (newWindow) {
-  // Set the window content to the desired URL
-  newWindow.location.href = url;
+		// Define invisible window options
+		const options = {
+  width: 1,
+  height: 1,
+  show: false, // Makes the window invisible
+};
 
-  // Wait for the page to load and perform operations
-  newWindow.addEventListener('load', function() {
-    // Access information from the new window
-    const pageTitle = newWindow.document.title;
+		// Launch the browser and open the window
+		(async () => {
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage(options);
+  await page.goto(url);
+})();
+
+		// Get the title
+		const pageTitle = await page.title();
     console.log('Page Title:', pageTitle);
 	  
     // Close the window after performing operations
-    newWindow.close();
-	  
+await page.close();
+await browser.close();
+		
 	  if(pageTitle.includes("Searching")) {
 		  return url;
 	  } else {
 		  return null;
 	  }    
-  });
-} else {
-  console.error('Failed to open a new window.');
-}
-	  }
+  }
+
 </script>
 </head>
 </html>
