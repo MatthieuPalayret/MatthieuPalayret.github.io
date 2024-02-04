@@ -53,22 +53,8 @@
 		linkElement.textContent="We have it! - "+decodedText;
 		resultContainer.appendChild(linkElement);
     } else {
-      resultContainer.innerHTML="We don't have it... - "+decodedText
-	      +fetch(url, { method: 'HEAD' }).text().then(html => {
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(html, 'text/html');
-
-    // Get the title element
-    const titleElement = doc.querySelector('head title');
-
-    if (titleElement) {
-		return titleElement.textContent;
-    } else {
-	    return null;
-    }
-		  }
-													 );
-				}
+      resultContainer.innerHTML="We don't have it... - "+decodedText;
+	}
   });
 		
 		    
@@ -83,36 +69,32 @@
     });
 
 	function checkForRedirect(url) {
- return fetch(url, { method: 'HEAD', mode: 'no-cors' })
-    .then(response => {
-if (response.ok) {
-      return response.text();
-    } else {
-      throw new Error('Error:', response.status, response.statusText);
-    }
-  })
-  .then(html => {
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(html, 'text/html');
+ // Open a new window silently
+const newWindow = window.open('', '_blank', 'width=0,height=0');
 
-    // Get the title element
-    const titleElement = doc.querySelector('head title');
+// Check if the new window was successfully opened
+if (newWindow) {
+  // Set the window content to the desired URL
+  newWindow.location.href = url;
 
-    if (titleElement) {
-      console.log('Title:', titleElement.textContent);
-	    if(titleElement.textContent.includes("Searching")) {
-		    return url;
-	    } else {
-		    return null;
-	    }
-    } else {
-      console.log('Title element not found in the HTML.');
-	    return null;
-    }
-    })
-    .catch(error => {
-      console.error('Error checking for redirect:', error);
-    });
+  // Wait for the page to load and perform operations
+  newWindow.addEventListener('load', function() {
+    // Access information from the new window
+    const pageTitle = newWindow.document.title;
+    console.log('Page Title:', pageTitle);
+	  
+    // Close the window after performing operations
+    newWindow.close();
+	  
+	  if(pageTitle.includes("Searching")) {
+		  return url;
+	  } else {
+		  return null;
+	  }    
+  });
+} else {
+  console.error('Failed to open a new window.');
+}
 	  }
 </script>
 </head>
