@@ -13,17 +13,6 @@
   <!-- place fav icons here -->
 
   <title>Audio-guide de la Chapelle Matisse de Vence</title>
-  <meta name="description" content="Audio-guide pour visiter la Chapelle Matisse des soeurs dominicaines de Vence.">
-
-  <!-- Twitter cards and OG Image for Facebook -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="" />
-  <meta name="twitter:creator" content="" />
-  <meta name="twitter:title" content="Audio-guide de la Chapelle Matisse de Vence" />
-  <meta name="twitter:description" content="Audio-guide pour visiter la Chapelle Matisse des soeurs dominicaines de Vence." />
-  
-  <meta name="og:image" content="http://chapellematisse.com/assets/img/meta/og-image.jpg" />
-  <meta name="twitter:image" content="http://chapellematisse.com/assets/img/meta/og-image.jpg" />
 
   <!-- Canonical urls -->
 
@@ -45,7 +34,15 @@
     <!-- JS for this web app -->
   <script src="/assets/js/main.js?v=1.0.0.1"></script>
 
-  <script src="html5-qrcode.min.js"></script>
+<script src="https://unpkg.com/html5-qrcode@2.0.9/dist/html5-qrcode.min.js">
+	function onScanSuccess(decodedText, decodedResult) {
+    console.log(`Code scanned = ${decodedText}`, decodedResult);
+}
+var html5QrcodeScanner = new Html5QrcodeScanner(
+	"qr-reader", { fps: 10, qrbox: 250 });
+html5QrcodeScanner.render(onScanSuccess);
+</script>
+
     
 </head>
 
@@ -97,16 +94,7 @@ Title: Jeux de la lumière dans les vitraux
   
 </div>
 
-<div style="width: 500px" id="reader"></div>
-
-        function onScanSuccess(decodedText, decodedResult) {
-    // Handle on success condition with the decoded text or result.
-    console.log(`Scan result: ${decodedText}`, decodedResult);
-}
-
-var html5QrcodeScanner = new Html5QrcodeScanner(
-	"reader", { fps: 10, qrbox: 250 });
-html5QrcodeScanner.render(onScanSuccess);
+<div id="qr-reader" style="width: 600px"></div>
         
       </div>
     </div>
