@@ -34,8 +34,11 @@
     <!-- JS for this web app -->
   <script src="/assets/js/main.js?v=1.0.0.1"></script>
 
-<script src="https://unpkg.com/html5-qrcode@2.0.9/dist/html5-qrcode.min.js">
-	function onScanSuccess(decodedText, decodedResult) {
+<script src="https://unpkg.com/html5-qrcode@2.0.9/dist/html5-qrcode.min.js"></script>
+
+<script type="text/javascript">
+/** Initialisation code comes here */
+function onScanSuccess(decodedText, decodedResult) {
     console.log(`Code scanned = ${decodedText}`, decodedResult);
 }
 var html5QrcodeScanner = new Html5QrcodeScanner(
