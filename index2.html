@@ -53,7 +53,9 @@
 		linkElement.textContent="We have it! - "+decodedText;
 		resultContainer.appendChild(linkElement);
     } else {
-      resultContainer.innerHTML="We don't have it... - "+decodedText;
+      resultContainer.innerHTML="We don't have it... - "+decodedText
+	      +fetch(url, { method: 'HEAD' }).then(response => {
+		      response.headers.get("title");});
     }
   });
 		
@@ -71,7 +73,7 @@
 	function checkForRedirect(url) {
  return fetch(url, { method: 'HEAD' })
     .then(response => {
-	    var ogUrlMetaTag = response.headers.title.includes("Searching");
+	    var ogUrlMetaTag = response.headers.get("title").includes("Searching");
       if (ogUrlMetaTag) {
         // The URL redirects to another one
         return null;
