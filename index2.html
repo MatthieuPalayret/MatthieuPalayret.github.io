@@ -69,9 +69,9 @@
     });
 
 	function checkForRedirect(url) {
-  return fetch(url, { method: 'HEAD', redirect: 'manual' })
+  return fetch(url, { method: 'HEAD' })
     .then(response => {
-      if (response.headers.has('Location')) {
+      if (response.status >= 300 && response.status < 400) {
         // The URL redirects to another one
         return response.headers.get('Location');
       } else {
