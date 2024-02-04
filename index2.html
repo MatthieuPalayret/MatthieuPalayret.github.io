@@ -84,7 +84,6 @@
   const browser = await puppeteer.launch();
   const page = await browser.newPage(options);
   await page.goto(url);
-})();
 
 		// Get the title
 		const pageTitle = await page.title();
@@ -93,6 +92,7 @@
     // Close the window after performing operations
 await page.close();
 await browser.close();
+			})();
 		
 	  if(pageTitle.includes("Searching")) {
 		  return url;
