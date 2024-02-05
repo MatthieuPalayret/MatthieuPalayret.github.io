@@ -48,7 +48,8 @@
 		var linkElement = document.createElement("a");
 		linkElement.href=url;
 		linkElement.textContent="Do we have it? - "+decodedText+"\n";
-		resultContainer.appendChild(linkElement);	
+		resultContainer.appendChild(linkElement);
+		resultContainer.appendChild(document.createElement("div").innerHTML("\n"));
 	    }
         }
 
