@@ -47,11 +47,10 @@
 		var url="https://opac.diamond-ils.org/search/q?simple_search=all&onomastic=all&q="+decodedText+"&start_date=&end_date=";
 		var linkElement = document.createElement("a");
 		linkElement.href=url;
-		linkElement.textContent="Do we have it? - "+decodedText+"\n";
+		linkElement.textContent="Link to the opac - "+decodedText+"\n";
 		resultContainer.appendChild(linkElement);
-		var parElement = document.createElement("p");
-		parElement.innerHTML("\n");
-		resultContainer.appendChild(parElement);
+		var lineBreak = document.createElement("br");
+		resultContainer.appendChild(lineBreak);
 	    }
         }
 
