@@ -56,7 +56,9 @@
         }
 
         var html5QrcodeScanner = new Html5QrcodeScanner(
-            "qr-reader", { fps: 10, qrbox: 250, format: 9 });
+            "qr-reader", { fps: 10, qrbox: 250, format: 9, showTorchButtonIfSupported: true,
+			 supportedScanTypes: [Html5QrcodeScanType.SCAN_TYPE_CAMERA],
+			 rememberLastUsedCamera: true });
         html5QrcodeScanner.render(onScanSuccess);
     });
 
