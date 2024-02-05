@@ -49,7 +49,9 @@
 		linkElement.href=url;
 		linkElement.textContent="Do we have it? - "+decodedText+"\n";
 		resultContainer.appendChild(linkElement);
-		resultContainer.appendChild(document.createElement("p").innerHTML("\n"));
+		var parElement = document.createElement("p");
+		parElement.innerHTML("\n");
+		resultContainer.appendChild(parElement);
 	    }
         }
 
