@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Links</title>
+    <title>Ordo liturgique oriental</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
         }
 
-        #link-container {
-            margin: 50px;
+        #calendar {
+            display: inline-block;
+            margin: 20px;
+        }
+
+        #selectedDate {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        #linkContainer {
+            margin-top: 20px;
         }
 
         a {
@@ -26,10 +35,56 @@
     </style>
 </head>
 <body>
-    <h1>Daily Links</h1>
-    <div id="link-container"></div>
+    <h1>Ordo liturgique oriental</h1>
+    <div id="calendar"></div>
+    <div id="selectedDate"></div>
+    <div id="linkContainer">
+        <a id="outputLink" href="#" target="_blank">Prière du jour sur AELF.org</a>
+    </div>
 
     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the current date
+            var currentDate = new Date();
+
+            // Create a calendar
+            var calendar = new FullCalendar.Calendar(document.getElementById('calendar'), {
+                initialView: 'dayGridMonth',
+                dateClick: function (info) {
+                    // Handle date click event
+                    var selectedDate = info.date;
+                    updateSelectedDate(selectedDate);
+                },
+            });
+
+            // Render the calendar
+            calendar.render();
+
+            // Initialize with the current date
+            updateSelectedDate(currentDate);
+        });
+
+        function updateSelectedDate(selectedDate) {
+            // Display the selected date
+            document.getElementById('selectedDate').innerText = 'Selected Date: ' + selectedDate.toLocaleDateString();
+
+            // Update the link based on the selected date
+            var linkContainer = document.getElementById('outputLink');
+            var link = generateLink(selectedDate);
+            linkContainer.href = link;
+            linkContainer.innerText = 'Prière du jour sur AELF.org - ' + selectedDate.getFullYEar() + '-' + selectedDate.getMonth() + '-' + selectedDate.getDate();
+        }
+
+        function generateLink(selectedDate) {
+            // Check if the selectedDate day is within the valid range
+            if (selectedDate.getMonth() >= 0 && selectedDate.getMonth() < dailyLinks.length && selectedDate.getDate() -1 >= 0 && selectedDate.getDate() -1 < dailyLinks[selectedDate.getMonth()].length) {
+                const link = dailyLinks[currentDayOfYear.getMonth()][currentDayOfYear.getDate() - 1];
+                return "https://www.aelf.org/" + link + "/romain/lectures";
+            } else {
+                console.error("Invalid day of the year");
+            }
+        }
+
         // JavaScript array containing links for each day of the year
         const dailyLinks = [
 ["", "", "", "", "", "", "", "2020-01-13", "2018-01-09", "2018-01-10", "2018-01-11", "2018-01-12", "2018-01-13", "2018-01-14", "2018-01-15", "2018-01-16", "2020-01-22", "2018-01-18", "2018-01-19", "2018-01-20", "2018-01-21", "2018-01-22", "2018-01-23", "2020-01-29", "2020-01-30", "", "2018-01-27", "2018-01-28", "2018-01-29", "2018-01-30", ""], 
@@ -45,28 +100,9 @@
 ["2018-10-26", "2018-10-27", "2018-10-28", "2018-10-29", "2018-10-30", "2018-10-31", "2020-10-29", "2020-10-30", "2018-11-03", "2018-11-04", "2018-11-05", "2018-11-06", "2018-11-07", "2018-11-08", "2020-11-06", "2020-11-07", "2018-11-11", "2022-11-07", "2018-11-13", "2018-11-14", "2018-11-15", "2018-11-16", "2020-11-14", "2018-11-18", "2018-11-19", "2018-11-20", "2020-11-18", "2020-11-19", "2018-11-23", "2022-11-19"], 
 ["2018-11-25", "2018-11-26", "2018-11-27", "2018-11-28", "2018-11-29", "2020-11-27", "2018-12-01", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
         ];
-
-        // Function to display the link for the current day
-        function displayLinkForCurrentDay() {
-            const currentDayOfYear = new Date();
-
-            // Check if the current day is within the valid range
-            if (currentDayOfYear.getMonth() >= 0 && currentDayOfYear.getMonth() < dailyLinks.length && currentDayOfYear.getDate() -1 >= 0 && currentDayOfYear.getDate() -1 < dailyLinks[currentDayOfYear.getMonth()].length) {
-                const linkContainer = document.getElementById("link-container");
-                const link = dailyLinks[currentDayOfYear.getMonth()][currentDayOfYear.getDate() - 1];
-
-                // Create and append the link to the container
-                const linkElement = document.createElement("a");
-                linkElement.href = "https://www.aelf.org/" + link + "/romain/lectures";
-                linkElement.textContent = "Link for Today";
-                linkContainer.appendChild(linkElement);
-            } else {
-                console.error("Invalid day of the year");
-            }
-        }
-
-        // Call the function on page load
-        displayLinkForCurrentDay();
     </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fullcalendar/common@5.9.0/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/common@5.9.0/main.js"></script>
 </body>
 </html>
