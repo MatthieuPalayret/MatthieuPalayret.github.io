@@ -19,6 +19,10 @@
             margin-top: 20px;
         }
 
+        #linkContainerArabic {
+            margin-top: 20px;
+        }
+
         a {
             display: block;
             margin: 10px;
@@ -38,6 +42,9 @@
     <div id="selectedDate"></div>
     <div id="linkContainer">
         <a id="outputLink" href="#">Prière du jour sur AELF.org</a>
+    </div>
+    <div id="linkContainerArabic">
+        <a id="outputLinkArabic" href="#">صلاة اليوم في إيبريفياري</a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
@@ -63,21 +70,23 @@
 
         function updateSelectedDate(selectedDate) {
             // Display the selected date
-            var selectedDateContainer = document.getElementById('selectedDate');
-            selectedDateContainer.innerText = 'Selected Date: ' + selectedDate.toDateString();
+            // var selectedDateContainer = document.getElementById('selectedDate');
+            // selectedDateContainer.innerText = 'Selected Date: ' + selectedDate.toDateString();
 
             // Update the link based on the selected date
             var outputLinkContainer = document.getElementById('outputLink');
+            var outputLinkContainerArabic = document.getElementById('outputLinkArabic');
             var link = generateLink(selectedDate);
-            outputLinkContainer.href = link;
-            outputLinkContainer.innerText = 'Prière du jour sur AELF.org - ' + selectedDate.getFullYear() + '-' + selectedDate.getMonth() + '-' + selectedDate.getDate();
+            outputLinkContainer.href = "https://www.aelf.org/" + link + "/romain/lectures";
+            outputLinkContainer.innerText = 'Prière du jour sur AELF.org - ' + selectedDate.getFullYear() + '-' + (selectedDate.getMonth()+1) + '-' + selectedDate.getDate();
+            outputLinkContainerArabic.href = "http://www.ibreviary.com/m2/breviario.php?lang=ar&date=" + link;
+            outputLinkContainerArabic.innerText = 'صلاة اليوم في إيبريفياري - ' + selectedDate.getFullYear() + '-' + (selectedDate.getMonth()+1) + '-' + selectedDate.getDate();
         }
 
         function generateLink(selectedDate) {
             // Check if the selectedDate day is within the valid range
             if (selectedDate.getMonth() >= 0 && selectedDate.getMonth() < dailyLinks.length && selectedDate.getDate() -1 >= 0 && selectedDate.getDate() -1 < dailyLinks[selectedDate.getMonth()].length) {
-                const link = dailyLinks[selectedDate.getMonth()][selectedDate.getDate() - 1];
-                return "https://www.aelf.org/" + link + "/romain/lectures";
+                return dailyLinks[selectedDate.getMonth()][selectedDate.getDate() - 1];
             } else {
                 console.error("Invalid day of the year");
             }
