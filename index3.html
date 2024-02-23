@@ -61,13 +61,14 @@
 
         function updateSelectedDate(selectedDate) {
             // Display the selected date
-            document.getElementById('selectedDate').innerText = 'Selected Date: ' + selectedDate.toLocaleDateString();
+            var selectedDateContainer = document.getElementById('selectedDate');
+            selectedDateContainer.innerText = 'Selected Date: ' + selectedDate.toDateString();
 
             // Update the link based on the selected date
-            var linkContainer = document.getElementById('outputLink');
+            var outputLinkContainer = document.getElementById('outputLink');
             var link = generateLink(selectedDate);
-            linkContainer.href = link;
-            linkContainer.innerText = 'Prière du jour sur AELF.org - ' + selectedDate.getFullYEar() + '-' + selectedDate.getMonth() + '-' + selectedDate.getDate();
+            outputLinkContainer.href = link;
+            outputLinkContainer.innerText = 'Prière du jour sur AELF.org - ' + selectedDate.getFullYEar() + '-' + selectedDate.getMonth() + '-' + selectedDate.getDate();
         }
 
         function generateLink(selectedDate) {
