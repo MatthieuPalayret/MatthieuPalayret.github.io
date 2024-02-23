@@ -44,7 +44,7 @@
         <a id="outputLink" href="#">Prière du jour sur AELF.org</a>
     </div>
     <div id="linkContainerArabic">
-        <a id="outputLinkArabic" href="#">صلاة اليوم في إيبريفياري</a>
+        <a id="outputLinkArabic" href="#">صلوات الساعات في إيبريفياري</a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
@@ -77,9 +77,9 @@
             var outputLinkContainer = document.getElementById('outputLink');
             var outputLinkContainerArabic = document.getElementById('outputLinkArabic');
             var link = generateLink(selectedDate);
-            outputLinkContainer.href = "https://www.aelf.org/" + link + "/romain/lectures";
+            outputLinkContainer.href = "https://www.aelf.org/" + link + "/romain/laudes";
             outputLinkContainer.innerText = 'Prière du jour sur AELF.org - ' + selectedDate.getFullYear() + '-' + (selectedDate.getMonth()+1) + '-' + selectedDate.getDate();
-            outputLinkContainerArabic.href = "http://www.ibreviary.com/m2/breviario.php?lang=ar&date=" + link;
+            outputLinkContainerArabic.href = "http://www.ibreviary.com/m2/breviario.php?b=1&lang=ar&date=" + link;
             outputLinkContainerArabic.innerText = 'صلاة اليوم في إيبريفياري - ' + selectedDate.getFullYear() + '-' + (selectedDate.getMonth()+1) + '-' + selectedDate.getDate();
         }
 
