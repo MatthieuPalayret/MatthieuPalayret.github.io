@@ -68,7 +68,6 @@
 
             // Update the link based on the selected date
             var outputLinkContainer = document.getElementById('outputLink');
-            outputLinkContainer.innerText = 'Prière du jour sur AELF.org - Changed!';
             var link = generateLink(selectedDate);
             outputLinkContainer.href = link;
             outputLinkContainer.innerText = 'Prière du jour sur AELF.org - ' + selectedDate.getFullYear() + '-' + selectedDate.getMonth() + '-' + selectedDate.getDate();
