@@ -7,11 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-        }
-
-        #calendar {
-            display: inline-block;
-            margin: 20px;
+            text-align: center;
         }
 
         #selectedDate {
@@ -36,32 +32,31 @@
 </head>
 <body>
     <h1>Ordo liturgique oriental</h1>
-    <div id="calendar"></div>
+    <label for="datepicker">Select a date:</label>
+    <input type="text" id="datepicker" readonly>
+    
     <div id="selectedDate"></div>
     <div id="linkContainer">
         <a id="outputLink" href="#" target="_blank">Prière du jour sur AELF.org</a>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/pikaday@1.8.0/dist/pikaday.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pikaday@1.8.0/dist/css/pikaday.css">
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // Get the current date
-            var currentDate = new Date();
+            var selectedDateContainer = document.getElementById('selectedDate');
+            var outputLinkContainer = document.getElementById('outputLink');
 
-            // Create a calendar
-            var calendar = new FullCalendar.Calendar(document.getElementById('calendar'), {
-                initialView: 'dayGridMonth',
-                dateClick: function (info) {
-                    // Handle date click event
-                    var selectedDate = info.date;
-                    updateSelectedDate(selectedDate);
-                },
+            var picker = new Pikaday({
+                field: document.getElementById('datepicker'),
+                format: 'YYYY-MM-DD',
+                onSelect: function (date) {
+                    updateSelectedDate(date);
+                }
             });
 
-            // Render the calendar
-            calendar.render();
-
             // Initialize with the current date
-            updateSelectedDate(currentDate);
+            updateSelectedDate(new Date());
         });
 
         function updateSelectedDate(selectedDate) {
@@ -101,8 +96,6 @@
 ["2018-11-25", "2018-11-26", "2018-11-27", "2018-11-28", "2018-11-29", "2020-11-27", "2018-12-01", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
         ];
     </script>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fullcalendar/common@5.9.0/main.css">
-    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/common@5.9.0/main.js"></script>
+    
 </body>
 </html>
