@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr-FR" class=""><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script async="" src="file://static.axept.io/sdk.js"></script>
+  <script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>AELF — Office de none — 3 mars 2024</title>
+<link rel="icon" type="image/x-icon" href="https://www.aelf.org/favicon.ico">
+<link href="./files/css" rel="stylesheet">
+<meta property="og:site_name" content="AELF">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AELF — Office de none — 3 mars 2024">
+<meta property="og:image" content="https://www.aelf.org/images/logo-big.png">
+
+<link rel="stylesheet" href="./files/front.84133a77.css">
+<style type="text/css">.fancybox-margin{margin-right:17px;}</style></head>
+<body class="front_offices">
+
+
+<div class="menu-secondary-mobile">
+<ul>
+<li class="menu-aelf">
+<a href="https://www.aelf.org/page/les-missions-de-laelf" class="" title="Accéder aux contenus de l&#39;AELF">
+L'AELF
+</a>
+</li>
+<li>
+<a href="https://www.aelf.org/abonnement" title="Accéder à la page d&#39;abonnement">
+S'abonner
+</a>
+</li>
+<li>
+<a href="https://www.aelf.org/calendrier/romain/2018/01" class="" title="Accéder au calendrier">Calendrier</a>
+</li>
+<li>
+<a href="https://www.aelf.org/contact" class="" title="Accéder à la page de contact">Contact</a>
+</li>
+</ul>
+<button class="btn btn-default">
+<div class="span-img">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</button>
+</div>
+<header id="header_background">
+<div class="container">
+<div id="header">
+<div class="row">
+<div class="col-sm-7 col-md-6">
+<a href="https://www.aelf.org/" title="Accéder à la page d&#39;accueil"><img src="./files/logo-aelf-2016.svg" alt="Logo de l&#39;AELF"></a>
+<h2>Association Épiscopale Liturgique<br class="only-desktop only-tablet"> pour les pays Francophones</h2>
+</div>
+<div class="col-sm-5 col-md-6 text-right">
+<p class="bold">Recevez gratuitement<br> les lectures du jour par courriel</p>
+<a href="https://www.aelf.org/abonnement" class="btn btn-default btn-aelf" title="Accéder à la page d&#39;abonnement">S'abonner</a>
+<br>
+<div class="social links hidden-xs">
+<a href="https://www.aelf.org/abonnement" class="text-black mailing" title="Accéder à la page d&#39;abonnement" style="color: rgba(0, 0, 0, 0.2)"><i class="fa fa-envelope-square"></i></a>
+<span itemscope="" itemtype="https://schema.org/Organization">
+<link itemprop="url" href="https://www.aelf.org/">
+<a href="https://twitter.com/AELF_officiel" itemprop="sameAs" class="text-black twitter" title="Twitter" style="color: rgba(0, 0, 0, 0.2)" target="_blank"><i class="fa fa-twitter-square"></i></a>
+<a href="https://www.facebook.com/aelf.org" itemprop="sameAs" class="text-black facebook" title="Facebook" style="color: rgba(0, 0, 0, 0.2)" target="_blank"><i class="fa fa-facebook-square"></i></a>
+</span>
+<a href="https://rss.aelf.org/" class="text-black rss" title="Accéder à la création et gestion des flux RSS" style="color: rgba(0, 0, 0, 0.2)"><i class="fa fa-rss-square"></i></a>
+<a href="https://api.aelf.org/" class="text-black api" title="Accéder à la documentation de l&#39;API">API</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<ul id="menu-mobile" class="clearfix">
+<li>
+<a href="./messe" class="" title="Accéder aux messes">La messe</a>
+</li>
+<li>
+<a href="./laudes" class="active" title="Accéder à la liturgie des heures">Les heures</a>
+</li>
+<li>
+<a href="https://www.aelf.org/bible" class="" title="Accéder à la Bible">La Bible</a>
+</li>
+</ul>
+<div class="container" id="content">
+<div class="row">
+<div class="col-sm-3 col-md-2">
+<div class="sidebar-nav" id="menu">
+<div class="navbar navbar-default" role="navigation">
+<ul class="nav navbar-nav" id="sidenav01">
+<li><a href="./messe" class="" title="Accéder aux messes">La messe</a></li>
+<li><a href="./laudes" class="active" title="Accéder aux heures">Les heures</a></li>
+<li><a href="https://www.aelf.org/bible" class="" title="Accéder à la Bible">La Bible</a></li>
+<li id="menu-aelf">
+<a href="https://www.aelf.org/page/les-missions-de-laelf" class="" title="Accéder à la page AELF">
+<div class="span-img">
+<span></span>
+<span></span>
+<span></span>
+</div>
+L'AELF
+</a>
+</li>
+<li id="menu-podcast"><a href="https://www.aelf.org/page/videos" title="Accéder à la page de vidéos">Vidéos &amp;<br> podcasts</a></li>
+<li id="menu-calendrier"><a href="https://www.aelf.org/calendrier/romain/2018/01" class="" title="Accéder au calendrier">Calendrier</a></li>
+<li id="menu-contact"><a href="https://www.aelf.org/contact" class="" title="Accéder à la page de contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-sm-9 col-md-5">
+<div class="block-summary" id="middle-col">
+<div class="heading-day">
+<h4 class="date">3 mars 2024</h4>
+<p class="m-b-0">
+<span class="span-color color-vert" title="Couleur liturgique : vert"></span>
+<strong>dimanche, 9ème Semaine du Temps Ordinaire — Année B</strong><br>
+</p>
+</div>
+<div class="heading-day-mobile">
+<div class="dropdown hours-dropdown">
+<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><div class="pull-right"><span class="bold">|</span> <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></div>Office de none</button>
+<ul class="dropdown-menu" aria-labelledby="dLabel">
+<li>
+<a href="./lectures" title="Accéder à l&#39;office des lectures">Lectures</a>
+</li>
+<li>
+<a href="./laudes" title="Accéder à l&#39;office des laudes">Laudes</a>
+</li>
+<li>
+<a href="./tierce" title="Accéder à l&#39;office de tierce">Tierce</a>
+</li>
+<li>
+<a href="./sexte" title="Accéder à l&#39;office de sexte">Sexte</a>
+</li>
+<li>
+<a href="./none" title="Accéder à l&#39;office de none">None</a>
+</li>
+<li>
+<a href="./vepres" title="Accéder à l&#39;office des vêpres">Vêpres</a>
+</li>
+<li>
+<a href="./complies" title="Accéder à l&#39;office des complies">Complies</a>
+</li>
+</ul>
+</div>
+</div>
+<ul class="hours-menu">
+<li> <a href="./lectures" title="Accéder à l&#39;office des lectures">Lectures</a>
+</li>
+<li> <a href="./laudes" title="Accéder à l&#39;office des laudes">Laudes</a>
+</li>
+<li> <a href="./tierce" title="Accéder à l&#39;office de tierce">Tierce</a>
+</li>
+<li> <a href="./sexte" title="Accéder à l&#39;office de sexte">Sexte</a>
+</li>
+<li> <span>None</span>
+</li>
+<li> <a href="./vepres" title="Accéder à l&#39;office des vêpres">Vêpres</a>
+</li>
+<li> <a href="./complies" title="Accéder à l&#39;office des complies">Complies</a>
+</li>
+</ul>
+<ul class="blocks readings hours">
+<li class="">
+<a class="lecture_link clearfix" href="#office_introduction" title="Accéder à la lecture">
+<span class="subhead single-line">Introduction</span>
+<span class="title"><p>V/ Dieu, viens à mon aide,
+<br>R/ Seigneur, à notre secours.</p>...</span>
+</a>
+</li>
+<li>
+<a class="lecture_link clearfix" href="#office_hymne" title="Accéder à la lecture">
+<span class="subhead single-line">Hymne</span>
+<span class="title">Ô Toi qui es sans changement</span>
+</a>
+</li>
+<li>
+<a class="lecture_link clearfix" href="#office_psaume1" title="Accéder à la lecture">
+<span class="subhead single-line">Psaume</span>
+<span class="title">117 - I — Alléluia !</span>
+</a>
+</li>
+<li>
+<a class="lecture_link clearfix" href="#office_psaume2" title="Accéder à la lecture">
+<span class="subhead single-line">Psaume</span>
+<span class="title">117 - II </span>
+</a>
+</li>
+<li>
+<a class="lecture_link clearfix" href="#office_psaume3" title="Accéder à la lecture">
+<span class="subhead single-line">Psaume</span>
+<span class="title">117 - III </span>
+</a>
+</li>
+<li>
+<a class="lecture_link clearfix" href="#office_pericope" title="Accéder à la lecture">
+<span class="subhead single-line">Péricope</span>
+<span class="title">Ga 6, 9-10</span>
+</a>
+</li>
+<li>
+<a class="lecture_link clearfix" href="#office_conclusion" title="Accéder à la lecture">
+<span class="subhead single-line">Conclusion</span>
+<span class="title">Dans ton amour inlassable, Seigneur, veille sur ta famille ; et puisque ta grâce est notre unique espoir, garde-nous sous ta constante protection.</span>
+</a>
+</li>
+</ul> </div>
+</div>
+<div class="col-sm-9 col-md-5 container-reading">
+<div class="container-toolbar">
+<div class="toolbar"><div id="zoom" class="pull-right"><span class="btn-toolbar" id="zoom_button" onclick="javascript:openComfortMode();"><span class="icon">A+</span><span class="text">Lecture<br>confort</span></span></div></div>
+</div>
+<div class="block-single-reading" id="right-col">
+<h1>Office de none</h1>
+<div class="lecture" id="office_introduction">
+<h4>Introduction</h4>
+<p>V/ Dieu, viens à mon aide,
+<br>R/ Seigneur, à notre secours.</p>
+<p>Gloire au Père, et au Fils et au Saint-Esprit,
+<br>au Dieu qui est, qui était et qui vient,
+<br>pour les siècles des siècles.
+<br>Amen. (Alléluia.)</p>
+</div>
+<div class="lecture active_lecture" id="office_hymne">
+<h4>Hymne&nbsp;: Ô Toi qui es sans changement</h4>
+<p><small>A. Rivière — CNPL</small></p>
+Ô Toi qui es sans changement,<br>Seigneur du temps, ô Dieu fidèle ;<br>Le jour décline, le soir vient :<br>Rassemble-nous tous en ta garde.<br><br>Accorde-nous la vie sans fin<br>Et la vieillesse sans ténèbres ;<br>Fais que, le jour de ton retour,<br>Ta gloire enfin nous illumine.<br><br>Exauce-nous, ô Tout-puissant,<br>Par Jésus Christ ton Fils unique<br>Qui règne avec le Saint-Esprit<br>Depuis toujours et dans les siècles.<br>
+</div>
+<div class="lecture" id="office_psaume1">
+<h4>Antienne</h4>
+Alléluia !
+<h4>Psaume&nbsp;: 117 - I</h4>
+<p><span class="verse_number">1</span> Rendez grâce au Seigne<u>u</u>r : Il est bon ! *<br>
+&nbsp;&nbsp; Étern<u>e</u>l est son amour !<br><br><span class="verse_number">2</span> Oui, que le d<u>i</u>se Israël :<br>
+&nbsp;&nbsp; Étern<u>e</u>l est son amour ! +<br><span class="verse_number">3</span> Que le dise la mais<u>o</u>n d'Aaron :<br>
+&nbsp;&nbsp; Étern<u>e</u>l est son amour ! *<br><span class="verse_number">4</span> Qu'ils le disent, ceux qui cr<u>a</u>ignent le Seigneur :<br>
+&nbsp;&nbsp; Étern<u>e</u>l est son amour !</p>
+</div>
+
+<div class="lecture" id="office_psaume2">
+<h4>Psaume&nbsp;: 117 - II</h4>
+<p><span class="verse_number">5</span> Dans mon angoisse j'ai cri<u>é</u> vers le Seigneur,<br>
+et lui m'a exauc<u>é</u>, mis au large.<br><span class="verse_number">6</span> Le Seigneur est pour m<u>o</u>i, je ne crains pas ;<br>
+que pourrait un h<u>o</u>mme contre moi ?<br><span class="verse_number">7</span> Le Seigneur est avec m<u>o</u>i pour me défendre,<br>
+et moi, je braver<u>a</u>i mes ennemis.<br><br><span class="verse_number">8</span> Mieux vaut s'appuy<u>e</u>r sur le Seigneur<br>
+&nbsp;&nbsp; que de compt<u>e</u>r sur les hommes ; *<br><span class="verse_number">9</span> mieux vaut s'appuy<u>e</u>r sur le Seigneur<br>
+&nbsp;&nbsp; que de compt<u>e</u>r sur les puissants !<br><br><span class="verse_number">10</span> Toutes les nati<u>o</u>ns m'ont encerclé :<br>
+au nom du Seigne<u>u</u>r, je les détruis !<br><span class="verse_number">11</span> Elles m'ont cern<u>é</u>, encerclé :<br>
+au nom du Seigne<u>u</u>r, je les détruis !<br><span class="verse_number">12</span> Elles m'ont cern<u>é</u> comme des guêpes : +<br>
+(– ce n'ét<u>a</u>it qu'un feu de ronces –) *<br>
+au nom du Seigne<u>u</u>r, je les détruis !<br><br><span class="verse_number">13</span> On m'a poussé, bouscul<u>é</u> pour m'abattre ;<br>
+mais le Seigne<u>u</u>r m'a défendu.<br><span class="verse_number">14</span> Ma force et mon ch<u>a</u>nt, c'est le Seigneur ;<br>
+il est pour m<u>o</u>i le salut.<br><br><span class="verse_number">15</span> Clameurs de j<u>o</u>ie et de victoire *<br>
+sous les t<u>e</u>ntes des justes :<br>
+« Le bras du Seigneur est fort,<br><span class="verse_number">16</span> le bras du Seigne<u>u</u>r se lève, *<br>
+le bras du Seigne<u>u</u>r est fort ! »<br><br><span class="verse_number">17</span> Non, je ne mourrai p<u>a</u>s, je vivrai<br>
+pour annoncer les acti<u>o</u>ns du Seigneur :<br><span class="verse_number">18</span> il m'a frappé, le Seigne<u>u</u>r, il m'a frappé,<br>
+mais sans me livr<u>e</u>r à la mort.<br><br><span class="verse_number">19</span> Ouvrez-moi les p<u>o</u>rtes de justice :<br>
+j'entrerai, je rendrai gr<u>â</u>ce au Seigneur.<br><span class="verse_number">20</span> « C'est ici la p<u>o</u>rte du Seigneur :<br>
+qu'ils <u>e</u>ntrent, les justes ! »<br><span class="verse_number">21</span> Je te rends grâce car tu m'<u>a</u>s exaucé :<br>
+tu es pour m<u>o</u>i le salut.<br><br><span class="verse_number">22</span> La pierre qu'ont rejet<u>é</u>e les bâtisseurs<br>
+est deven<u>u</u>e la pierre d'angle :<br><span class="verse_number">23</span> c'est là l'œ<u>u</u>vre du Seigneur,<br>
+la merv<u>e</u>ille devant nos yeux.<br><span class="verse_number">24</span> Voici le jour que f<u>i</u>t le Seigneur,<br>
+qu'il soit pour nous jour de f<u>ê</u>te et de joie !</p>
+</div>
+
+<div class="lecture" id="office_psaume3">
+<h4>Psaume&nbsp;: 117 - III</h4>
+<p><span class="verse_number">25</span> Donne, Seigneur, d<u>o</u>nne le salut !<br>
+Donne, Seigneur, d<u>o</u>nne la victoire !<br><br><span class="verse_number">26</span> Béni soit au n<u>o</u>m du Seigneur<br>
+&nbsp;&nbsp; celu<u>i</u> qui vient ! *<br>
+De la mais<u>o</u>n du Seigneur,<br>
+&nbsp;&nbsp; no<u>u</u>s vous bénissons !<br><br><span class="verse_number">27</span> Dieu, le Seigne<u>u</u>r, nous illumine. *<br>
+Rameaux en main, formez vos cortèges<br>
+&nbsp;&nbsp; jusqu'aupr<u>è</u>s de l'autel.<br><br><span class="verse_number">28</span> Tu es mon Die<u>u</u>, je te rends grâce, *<br>
+mon Die<u>u</u>, je t'exalte !<br><br><span class="verse_number">29</span> Rendez grâce au Seigne<u>u</u>r : Il est bon !&nbsp;*<br>
+&nbsp;&nbsp; Étern<u>e</u>l est son amour !</p>
+</div>
+
+<div class="lecture" id="office_pericope">
+<h4>Parole de Dieu&nbsp;: Ga 6, 9-10</h4>
+Ne nous lassons pas de faire le bien&nbsp;; en son temps viendra la récolte, si nous ne nous relâchons pas. Ainsi donc, tant que nous en avons l’occasion, pratiquons le bien à l’égard de tous et surtout de nos frères dans la foi.
+<h4>Répons</h4>
+V/ J'appelle de tout cœur, réponds-moi,<br>je garderai tes commandements.
+</div>
+
+<div class="lecture" id="office_conclusion">
+<h4 id="office_conclusion">Oraison</h4>
+<p>Dans ton amour inlassable, Seigneur, veille sur ta famille ; et puisque ta grâce est notre unique espoir, garde-nous sous ta constante protection.</p>
+</div> </div>
+</div>
+</div>
+</div>
+
+<script src="./files/front.ead14a80.js.download"></script>
+<script type="text/javascript" id="">window.axeptioSettings={clientId:"647741ec3eba371d6c538362"};(function(a,b){var c=a.getElementsByTagName(b)[0];a=a.createElement(b);a.async=!0;a.src="//static.axept.io/sdk.js";c.parentNode.insertBefore(a,c)})(document,"script");</script></body></html>
