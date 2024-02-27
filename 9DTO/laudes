@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="fr-FR" class="">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script async="" src="file://static.axept.io/sdk.js"></script>
+        <script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>AELF — Office des laudes — 3 mars 2024</title>
+<link rel="icon" type="image/x-icon" href="https://www.aelf.org/favicon.ico">
+<link href="./files/css" rel="stylesheet">
+<link rel="canonical" href="./">
+<meta property="og:site_name" content="AELF">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://www.aelf.org/images/logo-big.png">
+
+
+<link rel="stylesheet" href="./files/front.84133a77.css">
+<style type="text/css">.fancybox-margin{margin-right:17px;}</style>
+    </head>
+<body class="front_offices">
+
+<div class="menu-secondary-mobile">
+<ul>
+<li class="menu-aelf">
+<a href="https://www.aelf.org/page/les-missions-de-laelf" class="" title="Accéder aux contenus de l&#39;AELF">
+L'AELF
+</a>
+</li>
+<li>
+<a href="https://www.aelf.org/abonnement" title="Accéder à la page d&#39;abonnement">
+S'abonner
+</a>
+</li>
+<li>
+<a href="https://www.aelf.org/calendrier/romain/2018/01" class="" title="Accéder au calendrier">Calendrier</a>
+</li>
+<li>
+<a href="https://www.aelf.org/contact" class="" title="Accéder à la page de contact">Contact</a>
+</li>
+</ul>
+<button class="btn btn-default">
+<div class="span-img">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</button>
+</div>
+<header id="header_background">
+<div class="container">
+<div id="header">
+<div class="row">
+<div class="col-sm-7 col-md-6">
+<a href="https://www.aelf.org/" title="Accéder à la page d&#39;accueil"><img src="./files/logo-aelf-2016.svg" alt="Logo de l&#39;AELF"></a>
+<h2>Association Épiscopale Liturgique<br class="only-desktop only-tablet"> pour les pays Francophones</h2>
+</div>
+<div class="col-sm-5 col-md-6 text-right">
+<p class="bold">Recevez gratuitement<br> les lectures du jour par courriel</p>
+<a href="https://www.aelf.org/abonnement" class="btn btn-default btn-aelf" title="Accéder à la page d&#39;abonnement">S'abonner</a>
+<br>
+<div class="social links hidden-xs">
+<a href="https://www.aelf.org/abonnement" class="text-black mailing" title="Accéder à la page d&#39;abonnement" style="color: rgba(0, 0, 0, 0.2)"><i class="fa fa-envelope-square"></i></a>
+<span itemscope="" itemtype="https://schema.org/Organization">
+<link itemprop="url" href="https://www.aelf.org/">
+<a href="https://twitter.com/AELF_officiel" itemprop="sameAs" class="text-black twitter" title="Twitter" style="color: rgba(0, 0, 0, 0.2)" target="_blank"><i class="fa fa-twitter-square"></i></a>
+<a href="https://www.facebook.com/aelf.org" itemprop="sameAs" class="text-black facebook" title="Facebook" style="color: rgba(0, 0, 0, 0.2)" target="_blank"><i class="fa fa-facebook-square"></i></a>
+</span>
+<a href="https://rss.aelf.org/" class="text-black rss" title="Accéder à la création et gestion des flux RSS" style="color: rgba(0, 0, 0, 0.2)"><i class="fa fa-rss-square"></i></a>
+<a href="https://api.aelf.org/" class="text-black api" title="Accéder à la documentation de l&#39;API">API</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<ul id="menu-mobile" class="clearfix">
+<li>
+<a href="./messe" class="" title="Accéder aux messes">La messe</a>
+</li>
+<li>
+<a href="./laudes#" class="active" title="Accéder à la liturgie des heures">Les heures</a>
+</li>
+<li>
+<a href="https://www.aelf.org/bible" class="" title="Accéder à la Bible">La Bible</a>
+</li>
+</ul>
+<div class="container" id="content">
+<div class="row">
+<div class="col-sm-3 col-md-2">
+<div class="sidebar-nav" id="menu">
+<div class="navbar navbar-default" role="navigation">
+<ul class="nav navbar-nav" id="sidenav01">
+<li><a href="./messe" class="" title="Accéder aux messes">La messe</a></li>
+<li><a href="./laudes#" class="active" title="Accéder aux heures">Les heures</a></li>
+<li><a href="https://www.aelf.org/bible" class="" title="Accéder à la Bible">La Bible</a></li>
+<li id="menu-aelf">
+<a href="https://www.aelf.org/page/les-missions-de-laelf" class="" title="Accéder à la page AELF">
+<div class="span-img">
+<span></span>
+<span></span>
+<span></span>
+</div>
+L'AELF
+</a>
+</li>
+<li id="menu-podcast"><a href="https://www.aelf.org/page/videos" title="Accéder à la page de vidéos">Vidéos &amp;<br> podcasts</a></li>
+<li id="menu-calendrier"><a href="https://www.aelf.org/calendrier/romain/2018/01" class="" title="Accéder au calendrier">Calendrier</a></li>
+<li id="menu-contact"><a href="https://www.aelf.org/contact" class="" title="Accéder à la page de contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-sm-9 col-md-5">
+<div class="block-summary" id="middle-col">
+<div class="heading-day">
+<h4 class="date">3 mars 2024</h4>
+<p class="m-b-0">
+<span class="span-color color-vert" title="Couleur liturgique : vert"></span>
+<strong>dimanche, 9ème Semaine du Temps Ordinaire — Année B</strong><br>
+</p>
+
+
+
+
+</div>
+<div class="heading-day-mobile">
+
+<div class="dropdown hours-dropdown">
+<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><div class="pull-right"><span class="bold">|</span> <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></div>Office des laudes</button>
+<ul class="dropdown-menu" aria-labelledby="dLabel">
+<li>
+<a href="./lectures" title="Accéder à l&#39;office des lectures">Lectures</a>
+</li>
+<li>
+<a href="./laudes" title="Accéder à l&#39;office des laudes">Laudes</a>
+</li>
+<li>
+<a href="./tierce" title="Accéder à l&#39;office de tierce">Tierce</a>
+</li>
+<li>
+<a href="./sexte" title="Accéder à l&#39;office de sexte">Sexte</a>
+</li>
+<li>
+<a href=./none" title="Accéder à l&#39;office de none">None</a>
+</li>
+<li>
+<a href="./vepres" title="Accéder à l&#39;office des vêpres">Vêpres</a>
+</li>
+<li>
+<a href="./complies" title="Accéder à l&#39;office des complies">Complies</a>
+</li>
+</ul>
+</div>
+</div>
+<ul class="hours-menu">
+<li> <a href="./lectures" title="Accéder à l&#39;office des lectures">Lectures</a>
+</li>
+<li> <span>Laudes</span>
+</li>
+<li> <a href="./tierce" title="Accéder à l&#39;office de tierce">Tierce</a>
+</li>
+<li> <a href="./sexte" title="Accéder à l&#39;office de sexte">Sexte</a>
+</li>
+<li> <a href="./none" title="Accéder à l&#39;office de none">None</a>
+</li>
+<li> <a href="./vepres" title="Accéder à l&#39;office des vêpres">Vêpres</a>
+</li>
+<li> <a href="./complies" title="Accéder à l&#39;office des complies">Complies</a>
+</li>
+</ul>
+<ul class="blocks readings hours">
+<li class="">
+<a class="lecture_link clearfix" href="./laudes#office_introduction" title="Accéder à la lecture">
+<span class="subhead single-line">Introduction</span>
+<span class="title">V/ Seigneur, ouvre mes lèvres,
+<br>R/ et ma bouche publiera ta louange.</span>
+</a>
+</li>
+<li>
+<a class="lecture_link clearfix" href="./laudes#office_psaume_invitatoire" title="Accéder à la lecture">
+<span class="subhead single-line">Psaume</span>
+<span class="title"><p>Venez, crions de joie pour Dieu, notre Sauveur !</p></span>
+</a>
+</li>
+<li>
+<a class="lecture_link clearfix" href="./laudes#office_hymne" title="Accéder à la lecture">
+<span class="subhead single-line">Hymne</span>
+<span class="title">N’allons plus nous dérobant</span>
+</a>
+</li>
+<li>
+<a class="lecture_link clearfix" href="./laudes#office_psaume1" title="Accéder à la lecture">
+<span class="subhead single-line">Psaume</span>
+<span class="title">62 — <p>Mon âme a soif de toi, toi que je cherche dès l'aube.</p></span>
+</a>
+</li>
+<li>
+<a class="lecture_link clearfix" href="./laudes#office_psaume2" title="Accéder à la lecture">
+<span class="subhead single-line">Cantique</span>
+<span class="title">CANTIQUE des trois enfants (Dn 3) </span>
+</a>
+</li>
+<li>
+<a class="lecture_link clearfix" href="./laudes#office_psaume3" title="Accéder à la lecture">
+<span class="subhead single-line">Psaume</span>
+<span class="title">149 — <p>Alléluia !</p></span>
+</a>
+</li>
+<li>
+<a class="lecture_link clearfix" href="./laudes#office_pericope" title="Accéder à la lecture">
+<span class="subhead single-line">Péricope</span>
+<span class="title">Ap 7, 10.12</span>
+</a>
+</li>
+<li>
+<a class="lecture_link clearfix" href="./laudes#office_cantique" title="Accéder à la lecture">
+<span class="subhead">Cantique de Zacharie</span>
+<span class="title">Bénissez le Seigneur notre Dieu, faites retentir sa louange&nbsp;: il nous a rendu la vie, alléluia.</span>
+</a>
+</li>
+<li>
+<a class="lecture_link clearfix" href="./laudes#office_conclusion" title="Accéder à la lecture">
+<span class="subhead single-line">Conclusion</span>
+<span class="title">Dans ton amour inlassable, Seigneur, veille sur ta famille&nbsp;; et puisque ta grâce est notre unique espoir...</span>
+</a>
+</li>
+</ul> </div>
+
+</div>
+<div class="col-sm-9 col-md-5 container-reading">
+<div class="container-toolbar">
+<div class="toolbar"><div id="zoom" class="pull-right"><span class="btn-toolbar" id="zoom_button" onclick="javascript:openComfortMode();"><span class="icon">A+</span><span class="text">Lecture<br>confort</span></span></div></div>
+</div>
+    
+<div class="block-single-reading" id="right-col">
+<h1>Office des laudes</h1>
+<div class="lecture" id="office_introduction">
+<h4>Introduction</h4>
+V/ Seigneur, ouvre mes lèvres,
+<br>R/ et ma bouche publiera ta louange.
+</div>
+<div class="lecture active_lecture" id="office_psaume_invitatoire">
+<h4>Antienne invitatoire</h4>
+<p>Venez, crions de joie pour Dieu, notre Sauveur !</p>
+<h4>Psaume invitatoire&nbsp;: (94)</h4>
+<p><span class="verse_number">1</span> Venez, crions de j<u>o</u>ie pour le Seigneur,<br>
+acclamons notre Roch<u>e</u>r, notre salut !<br><span class="verse_number">2</span> Allons jusqu'à lu<u>i</u> en rendant grâce,<br>
+par nos hymnes de f<u>ê</u>te acclamons-le !<br><br><span class="verse_number">3</span> Oui, le grand Die<u>u</u>, c'est le Seigneur,<br>
+le grand roi au-dess<u>u</u>s de tous les dieux :<br><span class="verse_number">4</span> il tient en main les profonde<u>u</u>rs de la terre,<br>
+et les sommets des mont<u>a</u>gnes sont à lui ;<br><span class="verse_number">5</span> à lui la mer, c'est lu<u>i</u> qui l'a faite,<br>
+et les terres, car ses m<u>a</u>ins les ont pétries.<br><br><span class="verse_number">6</span> Entrez, inclinez-vo<u>u</u>s, prosternez-vous,<br>
+adorons le Seigne<u>u</u>r qui nous a faits.<br><span class="verse_number">7</span> Oui, il <u>e</u>st notre Dieu ; +<br>
+nous sommes le pe<u>u</u>ple qu'il conduit,<br>
+le troupeau guid<u>é</u> par sa main.<br><br>
+Aujourd'hui écouterez-vo<u>u</u>s sa parole ? +<br><span class="verse_number">8</span> « Ne fermez pas votre cœ<u>u</u>r comme au désert,<br>
+comme au jour de tentati<u>o</u>n et de défi,<br><span class="verse_number">9</span> où vos pères m'ont tent<u>é</u> et provoqué,<br>
+et pourtant ils avaient v<u>u</u> mon exploit.<br><br><span class="verse_number">10</span> « Quarante ans leur générati<u>o</u>n m'a déçu, +<br>
+et j'ai dit : Ce peuple a le cœ<u>u</u>r égaré,<br>
+il n'a pas conn<u>u</u> mes chemins.<br><span class="verse_number">11</span> Dans ma colère, j'en ai f<u>a</u>it le serment :<br>
+Jamais ils n'entrer<u>o</u>nt dans mon repos. »</p>
+</div>
+<div class="lecture" id="office_hymne">
+<h4>Hymne&nbsp;: N'allons pas nous dérobant</h4>
+<p><small>CFC — CFC</small></p>
+N’allons plus nous dérobant<br>
+À l’Esprit qui régénère :<br>
+Le Seigneur est ressuscité !<br>
+Un sang neuf coule aux artères<br>
+Du corps entier.<br>
+La nuit du temps<br>
+Se change en lumière :<br>
+L’homme était mort, il est vivant.<br>
+<br>
+N’allons plus à contre-voie<br>
+De Celui qui nous entraîne :<br>
+Le Seigneur est ressuscité !<br>
+Dans sa chair monte, soudaine,<br>
+L’éternité.<br>
+Il rend leur poids<br>
+Aux jours, aux semaines,<br>
+Les achemine vers la joie.<br>
+<br>
+N’allons plus sans feu ni lieu<br>
+Quand Jésus nous accompagne :<br>
+Le Seigneur est ressuscité !<br>
+Le voici pain sur la table<br>
+Des baptisés.<br>
+Présent de Dieu<br>
+Offert en partage :<br>
+Christ aujourd’hui ouvre nos yeux.<br>
+<br>
+Nous irons portant plus haut<br>
+Notre foi dans la victoire :<br>
+Le Seigneur est ressuscité !<br>
+L’univers chante la gloire<br>
+Des rachetés.<br>
+Le feu et l’eau<br>
+Emportent l’histoire,<br>
+Dieu nous appelle avec l’Agneau<br>
+</div>
+
+<div class="lecture" id="office_psaume1">
+<h4>Antienne</h4>
+<p>Mon âme a soif de toi, toi que je cherche dès l'aube.</p>
+<h4>Psaume&nbsp;: 62</h4>
+<p><span class="verse_number">2</span> Dieu, tu es mon Dieu,<br>
+&nbsp;&nbsp; je te ch<u>e</u>rche dès l’aube : *<br>
+mon âme a s<u>o</u>if de toi ;<br>
+après toi langu<u>i</u>t ma chair,<br>
+terre aride, altér<u>é</u>e, sans eau.<br><br><span class="verse_number">3</span> Je t’ai contempl<u>é</u> au sanctuaire,<br>
+j’ai vu ta f<u>o</u>rce et ta gloire.<br><span class="verse_number">4</span> Ton amour vaut mie<u>u</u>x que la vie :<br>
+tu seras la lou<u>a</u>nge de mes lèvres !<br><br><span class="verse_number">5</span> Toute ma vie je v<u>a</u>is te bénir,<br>
+lever les mains en invoqu<u>a</u>nt ton nom.<br><span class="verse_number">6</span> Comme par un festin je ser<u>a</u>i rassasié ;<br>
+la joie sur les lèvres, je dir<u>a</u>i ta louange.<br><br><span class="verse_number">7</span> Dans la nuit, je me souvi<u>e</u>ns de toi<br>
+et je reste des he<u>u</u>res à te parler.<br><span class="verse_number">8</span> Oui, tu es ven<u>u</u> à mon secours :<br>
+je crie de joie à l’<u>o</u>mbre de tes ailes.<br><span class="verse_number">9</span> Mon âme s’att<u>a</u>che à toi,<br>
+ta main dr<u>o</u>ite me soutient.<br>
+[10-12]</p>
+</div>
+
+<div class="lecture" id="office_psaume2">
+<h4>CANTIQUE des trois enfants (Dn 3)</h4>
+<p><span class="verse_number">57</span> Toutes les œ<u>u</u>vres du Seigneur,<br>
+&nbsp;&nbsp; bénissez le Seigneur :<br>
+À lui, haute gloire, louange éternelle !<br><br><span class="verse_number">58</span> Vous, les <u>a</u>nges du Seigneur,<br>
+&nbsp;&nbsp; bénissez le Seigneur :<br>
+À lui, haute gloire, louange éternelle !<br><br><span class="verse_number">59</span> Vo<u>u</u>s, les cieux,<br>
+&nbsp;&nbsp; bénissez le Seigneur,<br><span class="verse_number">60</span> et vous, les ea<u>u</u>x par-dessus le ciel,<br>
+&nbsp;&nbsp; bénissez le Seigneur,<br><span class="verse_number">61</span> et toutes les puiss<u>a</u>nces du Seigneur,<br>
+&nbsp;&nbsp; bénissez le Seigneur !<br><br><span class="verse_number">62</span> Et vous, le sol<u>e</u>il et la lune,<br>
+&nbsp;&nbsp; bénissez le Seigneur,<br><span class="verse_number">63</span> et vous, les <u>a</u>stres du ciel,<br>
+&nbsp;&nbsp; bénissez le Seigneur,<br><span class="verse_number">64</span> vous toutes, plu<u>i</u>es et rosées,<br>
+&nbsp;&nbsp; bénissez le Seigneur !<br><br><span class="verse_number">65</span> Vous tous, so<u>u</u>ffles et vents,<br>
+&nbsp;&nbsp; bénissez le Seigneur,<br><span class="verse_number">66</span> et vous, le fe<u>u</u> et la chaleur,<br>
+&nbsp;&nbsp; bénissez le Seigneur,<br><span class="verse_number">67</span> et vous, la fraîche<u>u</u>r et le froid,<br>
+&nbsp;&nbsp; bénissez le Seigneur !<br><br><span class="verse_number">68</span> Et vous, le g<u>i</u>vre et la rosée,<br>
+&nbsp;&nbsp; bénissez le Seigneur,<br><span class="verse_number">69</span> et vous, le g<u>e</u>l et le froid,<br>
+&nbsp;&nbsp; bénissez le Seigneur,<br><span class="verse_number">70</span> et vous, la gl<u>a</u>ce et la neige,<br>
+&nbsp;&nbsp; bénissez le Seigneur !<br><br><span class="verse_number">71</span> Et vous, les nu<u>i</u>ts et les jours,<br>
+&nbsp;&nbsp; bénissez le Seigneur,<br><span class="verse_number">72</span> et vous, la lumi<u>è</u>re et les ténèbres,<br>
+&nbsp;&nbsp; bénissez le Seigneur,<br><span class="verse_number">73</span> et vous, les écl<u>a</u>irs, les nuées,<br>
+&nbsp;&nbsp; bénissez le Seigneur :<br>
+À lui, haute gloire, louange éternelle !<br><br><span class="verse_number">74</span> Que la terre bén<u>i</u>sse le Seigneur :<br>
+À lui, haute gloire, louange éternelle !<br><br><span class="verse_number">75</span> Et vous, mont<u>a</u>gnes et collines,<br>
+&nbsp;&nbsp; bénissez le Seigneur,<br><span class="verse_number">76</span> et vous, les pl<u>a</u>ntes de la terre,<br>
+&nbsp;&nbsp; bénissez le Seigneur,<br><span class="verse_number">77</span> et vous, so<u>u</u>rces et fontaines,<br>
+&nbsp;&nbsp; bénissez le Seigneur !<br><br><span class="verse_number">78</span> Et vous, océ<u>a</u>ns et rivières,<br>
+&nbsp;&nbsp; bénissez le Seigneur,<br><span class="verse_number">79</span> baleines et b<u>ê</u>tes de la mer,<br>
+&nbsp;&nbsp; bénissez le Seigneur,<br><span class="verse_number">80</span> vous tous, les oisea<u>u</u>x dans le ciel,<br>
+&nbsp;&nbsp; bénissez le Seigneur,<br><span class="verse_number">81</span> vous tous, fa<u>u</u>ves et troupeaux<br>
+&nbsp;&nbsp; bénissez le Seigneur :<br>
+À lui, haute gloire, louange éternelle !<br><br><span class="verse_number">82</span> Et vous, les enf<u>a</u>nts des hommes,<br>
+&nbsp;&nbsp; bénissez le Seigneur :<br>
+À lui, haute gloire, louange éternelle !<br><br><span class="verse_number">83</span> Toi, Israël,<br>
+&nbsp;&nbsp; bénis le Seigneur,<br><span class="verse_number">84</span> Et vo<u>u</u>s, les prêtres,<br>
+&nbsp;&nbsp; bénissez le Seigneur,<br><span class="verse_number">85</span> vo<u>u</u>s, ses serviteurs,<br>
+&nbsp;&nbsp; bénissez le Seigneur !<br><br><span class="verse_number">86</span> Les esprits et les <u>â</u>mes des justes,<br>
+&nbsp;&nbsp; bénissez le Seigneur,<br><span class="verse_number">87</span> les saints et les h<u>u</u>mbles de cœur,<br>
+&nbsp;&nbsp; bénissez le Seigneur,<br><span class="verse_number">88</span> Ananias, Azari<u>a</u>s et Misaël,<br>
+&nbsp;&nbsp; bénissez le Seigneur :<br>
+À lui, haute gloire, louange éternelle !<br><br>
+Bénissons le Père, le F<u>i</u>ls et l'Esprit Saint :<br>
+À lui, haute gloire, louange éternelle !<br><span class="verse_number">56</span> Béni sois-tu, Seigneur, au firmam<u>e</u>nt du ciel :<br>
+À toi, haute gloire, louange éternelle !</p>
+</div>
+
+<div class="lecture" id="office_psaume3">
+<h4>Antienne</h4>
+<p>Alléluia !</p>
+<h4>Psaume&nbsp;: 149</h4>
+<span class="verse_number">1</span> Chantez au Seigne<u>u</u>r un chant nouveau,<br>louez-le dans l’assembl<u>é</u>e de ses fidèles !<br><span class="verse_number">2</span> En Israël, j<u>o</u>ie pour son créateur ;<br>dans Sion, allégr<u>e</u>sse pour son Roi !<br><span class="verse_number">3</span> Dansez à la lou<u>a</u>nge de son nom,<br>jouez pour lui, tambour<u>i</u>ns et cithares !<br><br><span class="verse_number">4</span> Car le Seigneur <u>a</u>ime son peuple,<br>il donne aux humbles l’écl<u>a</u>t de la victoire.<br><span class="verse_number">5</span> Que les fidèles ex<u>u</u>ltent, glorieux,<br>criant leur joie à l’he<u>u</u>re du triomphe.<br><span class="verse_number">6</span> Qu’ils proclament les él<u>o</u>ges de Dieu,<br>tenant en main l’ép<u>é</u>e à deux tranchants.<br><br><span class="verse_number">7</span> Tirer venge<u>a</u>nce des nations,<br>infliger aux pe<u>u</u>ples un châtiment,<br><span class="verse_number">8</span> charger de ch<u>a</u>înes les rois,<br>jeter les pr<u>i</u>nces dans les fers,<br><span class="verse_number">9</span> leur appliquer la sent<u>e</u>nce écrite,<br>c’est la fiert<u>é</u> de ses fidèles.<br>
+
+</div>
+<div class="lecture" id="office_pericope">
+<h4>Parole de Dieu&nbsp;: (Ap 7, 10.12)</h4>
+Le salut est donné par notre Dieu, lui qui siège sur le Trône, et par l’Agneau&nbsp;! Louange, gloire, sagesse et action de grâce, honneur, puissance et force à notre Dieu pour les siècles des siècles Amen&nbsp;!
+<h4>Répons</h4>
+<p>R/ Ô Christ, le Fils du Dieu vivant,</p><br>
+<p>* Pitié pour nous.</p><br>
+<p>V/ Toi qui es assis à la droite du Père, *</p><br>
+<p>Gloire au Père et au Fils et au Saint-Esprit. R/</p><br>
+</div>
+
+<div class="lecture" id="office_cantique">
+<h4>Antienne de Zacharie</h4>
+<p>Bénissez le Seigneur notre Dieu, faites retentir sa louange : il nous a rendu la vie, allléluia.</p>
+<h4>Cantique de Zacharie (Lc 1)</h4>
+<p><span class="verse_number">68</span> Béni soit le Seigneur, le Die<u>u</u> d'Israël,<br>
+qui visite et rach<u>è</u>te son peuple.<br><br><span class="verse_number">69</span> Il a fait surgir la f<u>o</u>rce qui nous sauve<br>
+dans la maison de Dav<u>i</u>d, son serviteur,<br><br><span class="verse_number">70</span> comme il l'avait dit par la bo<u>u</u>che des saints,<br>
+par ses prophètes, depuis les t<u>e</u>mps anciens :<br><br><span class="verse_number">71</span> salut qui nous arr<u>a</u>che à l'ennemi,<br>
+à la main de to<u>u</u>s nos oppresseurs,<br><br><span class="verse_number">72</span> amour qu'il m<u>o</u>ntre envers nos pères,<br>
+mémoire de son alli<u>a</u>nce sainte,<br><br><span class="verse_number">73</span> serment juré à notre p<u>è</u>re Abraham<br>
+&nbsp;&nbsp; de nous r<u>e</u>ndre sans crainte,<br><br><span class="verse_number">74</span> afin que, délivrés de la m<u>a</u>in des ennemis, +<br><span class="verse_number">75</span> nous le servions dans la just<u>i</u>ce et la sainteté,<br>
+en sa présence, tout au l<u>o</u>ng de nos jours.<br><br><span class="verse_number">76</span> Et toi, petit enfant, tu seras appelé<br>
+&nbsp;&nbsp; proph<u>è</u>te du Très-Haut : *<br>
+tu marcheras devant, à la face du Seigneur,<br>
+&nbsp;&nbsp; et tu préparer<u>a</u>s ses chemins<br><br><span class="verse_number">77</span> pour donner à son peuple de conn<u>a</u>ître le salut<br>
+par la rémissi<u>o</u>n de ses péchés,<br><br><span class="verse_number">78</span> grâce à la tendresse, à l'amo<u>u</u>r de notre Dieu,<br>
+quand nous visite l'<u>a</u>stre d'en haut,<br><br><span class="verse_number">79</span> pour illuminer ceux qui habitent les ténèbres<br>
+&nbsp;&nbsp; et l'<u>o</u>mbre de la mort, *<br>
+pour conduire nos pas<br>
+&nbsp;&nbsp; au chem<u>i</u>n de la paix.</p>
+</div>
+
+<div class="lecture" id="office_conclusion">
+<h4>Intercession</h4>
+<p>Louons le Christ Seigneur, soleil de notre jour, qui éclaire tout homme et ne connaît pas le déclin :</p><br>
+R/ <p>Tu es la Vie, Seigneur, tu es le Salut !</p><br>
+<p>Nous accueillons le jour que ta bonté nous accorde,&nbsp;<br>
+— le jour où tu surgis de la mort.</p><br>
+<p>Par l'eau du baptême, tu nous as fait renaître,&nbsp;<br>
+— fais-nous vivre du souffle de ton Esprit.</p><br>
+<p>À la table de ta Parole et de ton Corps, tu nous invites,&nbsp;<br>
+— rassemble-nous dans la joie et la simplicité du cœur.</p><br>
+<p>Pour tant de grâce, nous te rendons grâce ;<br>
+—&nbsp;fais que nous passions avec toi de ce monde au Père.</p><br>
+<h4>Notre Père</h4>
+<h4>Oraison</h4>
+<p>Dans ton amour inlassable, Seigneur, veille sur ta famille ; et puisque ta grâce est notre unique espoir, garde-nous sous ta constante protection.</p>
+</div> </div>
+</div>
+</div>
+</div>
+
+<script src="./files/front.ead14a80.js.download"></script>
+<script type="text/javascript" id="">window.axeptioSettings={clientId:"647741ec3eba371d6c538362"};(function(a,b){var c=a.getElementsByTagName(b)[0];a=a.createElement(b);a.async=!0;a.src="//static.axept.io/sdk.js";c.parentNode.insertBefore(a,c)})(document,"script");</script>
+</body>
+</html>
