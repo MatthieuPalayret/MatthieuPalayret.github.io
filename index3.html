@@ -35,9 +35,9 @@
     </style>
 </head>
 <body>
-    <h1>Ordo liturgique oriental</h1>
+    <h1>Ordo liturgique latin oriental</h1>
     
-    <label for="datepicker">Select a date:</label>
+    <label for="datepicker">Choisissez un jour :</label>
     <input type="text" id="datepicker" readonly>
     
     <div id="selectedDate">Valable entre le 12 février et le 15 juillet. 
@@ -81,7 +81,7 @@
             var link = generateLink(selectedDate);
             if(link == "8DTO" || link == "9DTO" || link == "8VTO") {
                 if(link == "8VTO") { // Problème pour les textes de la messe : année impaire !
-                    outputLinkContainerArabic.href = "http://www.ibreviary.com/m2/breviario.php?b=1&lang=fr&date=2011-03-04";
+                    outputLinkContainer.href = "http://www.ibreviary.com/m2/breviario.php?b=1&lang=fr&date=2011-03-04";
                 } else {
                     outputLinkContainer.href = "https://matthieupalayret.github.io/" + link + "/laudes.html";
                 }
