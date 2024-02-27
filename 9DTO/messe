@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr-FR" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script async="" src="file://static.axept.io/sdk.js"></script>
+    <script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>AELF — Messe — 3 mars 2024</title>
+<link rel="icon" type="image/x-icon" href="https://www.aelf.org/favicon.ico">
+<link href="./files/css" rel="stylesheet">
+<link rel="canonical" href="./">
+<meta property="og:site_name" content="AELF">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://www.aelf.org/images/logo-big.png">
+
+
+<link rel="stylesheet" href="./files/front.84133a77.css">
+<style type="text/css">.fancybox-margin{margin-right:17px;}</style>
+</head>
+    
+<body class="front_messes">
+<div class="menu-secondary-mobile">
+<ul>
+<li class="menu-aelf">
+<a href="https://www.aelf.org/page/les-missions-de-laelf" class="" title="Accéder aux contenus de l&#39;AELF">
+L'AELF
+</a>
+</li>
+<li>
+<a href="https://www.aelf.org/abonnement" title="Accéder à la page d&#39;abonnement">
+S'abonner
+</a>
+</li>
+<li>
+<a href="https://www.aelf.org/calendrier/romain/2018/01" class="" title="Accéder au calendrier">Calendrier</a>
+</li>
+<li>
+<a href="https://www.aelf.org/contact" class="" title="Accéder à la page de contact">Contact</a>
+</li>
+</ul>
+<button class="btn btn-default">
+<div class="span-img">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</button>
+</div>
+<header id="header_background">
+<div class="container">
+<div id="header">
+<div class="row">
+<div class="col-sm-7 col-md-6">
+<a href="https://www.aelf.org/" title="Accéder à la page d&#39;accueil"><img src="./files/logo-aelf-2016.svg" alt="Logo de l&#39;AELF"></a>
+<h2>Association Épiscopale Liturgique<br class="only-desktop only-tablet"> pour les pays Francophones</h2>
+</div>
+<div class="col-sm-5 col-md-6 text-right">
+<p class="bold">Recevez gratuitement<br> les lectures du jour par courriel</p>
+<a href="https://www.aelf.org/abonnement" class="btn btn-default btn-aelf" title="Accéder à la page d&#39;abonnement">S'abonner</a>
+<br>
+<div class="social links hidden-xs">
+<a href="https://www.aelf.org/abonnement" class="text-black mailing" title="Accéder à la page d&#39;abonnement" style="color: rgba(0, 0, 0, 0.2)"><i class="fa fa-envelope-square"></i></a>
+<span itemscope="" itemtype="https://schema.org/Organization">
+<link itemprop="url" href="https://www.aelf.org/">
+<a href="https://twitter.com/AELF_officiel" itemprop="sameAs" class="text-black twitter" title="Twitter" style="color: rgba(0, 0, 0, 0.2)" target="_blank"><i class="fa fa-twitter-square"></i></a>
+<a href="https://www.facebook.com/aelf.org" itemprop="sameAs" class="text-black facebook" title="Facebook" style="color: rgba(0, 0, 0, 0.2)" target="_blank"><i class="fa fa-facebook-square"></i></a>
+</span>
+<a href="https://rss.aelf.org/" class="text-black rss" title="Accéder à la création et gestion des flux RSS" style="color: rgba(0, 0, 0, 0.2)"><i class="fa fa-rss-square"></i></a>
+<a href="https://api.aelf.org/" class="text-black api" title="Accéder à la documentation de l&#39;API">API</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<ul id="menu-mobile" class="clearfix">
+<li>
+<a href="./messe#messe" class="active" title="Accéder aux messes">La messe</a>
+</li>
+<li>
+<a href="./laudes" class="" title="Accéder à la liturgie des heures">Les heures</a>
+</li>
+<li>
+<a href="https://www.aelf.org/bible" class="" title="Accéder à la Bible">La Bible</a>
+</li>
+</ul>
+<div class="container" id="content">
+<div class="row">
+<div class="col-sm-3 col-md-2">
+<div class="sidebar-nav" id="menu">
+<div class="navbar navbar-default" role="navigation">
+<ul class="nav navbar-nav" id="sidenav01">
+<li><a href="./messe#messe" class="active" title="Accéder aux messes">La messe</a></li>
+<li><a href="./laudes" class="" title="Accéder aux heures">Les heures</a></li>
+<li><a href="https://www.aelf.org/bible" class="" title="Accéder à la Bible">La Bible</a></li>
+<li id="menu-aelf">
+<a href="https://www.aelf.org/page/les-missions-de-laelf" class="" title="Accéder à la page AELF">
+<div class="span-img">
+<span></span>
+<span></span>
+<span></span>
+</div>
+L'AELF
+</a>
+</li>
+<li id="menu-podcast"><a href="https://www.aelf.org/page/videos" title="Accéder à la page de vidéos">Vidéos &amp;<br> podcasts</a></li>
+<li id="menu-calendrier"><a href="https://www.aelf.org/calendrier/romain/2018/01" class="" title="Accéder au calendrier">Calendrier</a></li>
+<li id="menu-contact"><a href="https://www.aelf.org/contact" class="" title="Accéder à la page de contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-5 col-sm-9">
+<div class="block-summary" id="middle-col">
+<div class="heading-day">
+<h4 class="date">3 mars 2024</h4>
+<p class="m-b-0">
+<span class="span-color color-vert" title="Couleur liturgique : vert"></span>
+<strong>dimanche, 9ème Semaine du Temps Ordinaire — Année B</strong><br>
+</p>
+</div>
+<div class="heading-day-mobile">
+<button type="button" class="btn btn-default btn-aelf comput-mobile color-vert" data-toggle="modal" data-target="#myModal">
+dimanche, 9ème Semaine du Temps Ordinaire
+</button>
+<div class="modal fade comput-modal-mobile" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-body">
+<h4 class="date">3 mars 2024</h4>
+<p class="m-b-0">
+<span class="span-color color-vert" title="Couleur liturgique : vert"></span>
+<strong>dimanche, 9ème Semaine du Temps Ordinaire — Année B</strong><br>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a href="./messe#messe1" class="single-mass">Lectures de la messe</a>
+<ul class="blocks readings">
+<li class="">
+<a class="lecture_link clearfix" href="./messe#messe1_lecture1" title="Accéder à la lecture">
+<span class="subhead">Première lecture</span>
+<span class="title">« Je ferai de toi mon épouse pour toujours »</span>
+<span class="ref">Os 2, 16b.17b.21-22</span>
+</a>
+</li>
+<li class="">
+<a class="lecture_link clearfix" href="./messe#messe1_lecture2" title="Accéder à la lecture">
+<span class="subhead single-line">Psaume</span>
+<span class="title">Le Seigneur est tendresse et pitié</span>
+<span class="ref">Ps 102 (103), 1-2, 3-4, 8.10, 12-13</span>
+</a>
+</li>
+<li class="">
+<a class="lecture_link clearfix" href="./messe#messe1_lecture3" title="Accéder à la lecture">
+<span class="subhead">Deuxième lecture</span>
+<span class="title">La lettre tue, mais l’Esprit donne la vie</span>
+<span class="ref">2 Co 3, 1b-6</span>
+</a>
+</li>
+<li class="">
+<a class="lecture_link clearfix" href="./messe#messe1_lecture4" title="Accéder à la lecture">
+<span class="subhead single-line">Évangile</span>
+<span class="title">« L’Époux est avec eux »</span>
+<span class="ref">Mc 2, 18-22</span>
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+<div class="col-sm-9 col-md-5 container-reading">
+<div class="container-toolbar">
+<div class="toolbar">
+    <div id="zoom" class="pull-right">
+        <span class="btn-toolbar" id="zoom_button" onclick="javascript:openComfortMode();">
+            <span class="icon">A+</span>
+            <span class="text">Lecture<br>confort</span>
+        </span>
+    </div>
+</div>
+
+</div>
+
+    <div class="block-single-reading" id="right-col">
+<div id="messe1">
+<h1>Lectures de la messe</h1>
+<div class="lecture_active_lecture" id="messe1_lecture1">
+<h4>Première lecture</h4>
+<h5>« Je ferai de toi mon épouse pour toujours » (Os 2, 16b.17b.21-22)</h5>
+<p>Lecture du livre du Deutéronome</p>
+<p>Ainsi parle le Seigneur :<br>
+« Mon épouse infidèle,<br>je vais l’entraîner jusqu’au désert, et je lui parlerai cœur à cœur.<br>Là, elle me répondra comme au temps de sa jeunesse,<br>au jour où elle est sortie du pays d’Égypte.
+<br><br>Je ferai de toi mon épouse pour toujours,<br>je ferai de toi mon épouse dans la justice et le droit,<br>dans la fidélité et la tendresse ;<br>je ferai de toi mon épouse dans la loyauté,<br>et tu connaîtras le Seigneur. »<br></p>
+
+<p>– Parole du Seigneur.</p>
+</div>
+<div class="lecture active_lecture" id="messe1_lecture2">
+<h4>Psaume</h4>
+<h5>(Ps 102 (103), 1-2, 3-4, 8.10, 12-13)</h5>
+<p><strong>R/ Le Seigneur est tendresse et pitié</strong> (Ps 102, 8a)</p>
+<p>Bénis le Seigneur, ô mon âme,<br>
+bénis son nom très saint, tout mon être !<br>
+Bénis le Seigneur, ô mon âme,<br>
+n’oublie aucun de ses bienfaits !<br><br>Car il pardonne toutes tes offenses<br>
+et te guérit de toute maladie ;<br>
+il réclame ta vie à la tombe<br>
+et te couronne d’amour et de tendresse.<br><br>Le Seigneur est tendresse et pitié,<br>
+lent à la colère et plein d’amour ;<br>
+il n’agit pas envers nous selon nos fautes,<br>
+ne nous rend pas selon nos offenses.<br><br>Aussi loin qu’est l’orient de l’occident,<br>
+il met loin de nous nos péchés ;<br>
+comme la tendresse du père pour ses fils,<br>
+la tendresse du Seigneur pour qui le craint !<br></p>
+</div>
+<div class="lecture active_lecture" id="messe1_lecture3">
+<h4>Deuxième lecture</h4>
+<h5>la lettre tue, mais l’Esprit donne la vie (2 Co 3, 1b-6)</h5>
+<p>Lecture de la deuxième lettre de saint Paul apôtre aux Corinthiens</p>
+<p>Avons-nous besoin, comme certains, de lettres de recommandation<br>qu’il faudrait vous présenter, ou obtenir de vous ?
+<br>Notre lettre de recommandation, c’est vous,<br>elle est écrite dans nos cœurs, et tout le monde peut en avoir connaissance et la lire
+<br>De toute évidence, vous êtes cette lettre du Christ,<br>produite par notre ministère, écrite non pas avec de l’encre, mais avec l’Esprit du Dieu vivant,<br>non pas, comme la Loi, sur des tables de pierre, mais sur des tables de chair, sur vos cœurs.
+<br>Et si nous avons une telle confiance en Dieu par le Christ,
+<br>ce n’est pas à cause d’une capacité personnelle que nous pourrions nous attribuer :<br>notre capacité vient de Dieu.
+<br>Lui nous a rendus capables d’être les ministres d’une Alliance nouvelle,<br>fondée non pas sur la lettre mais dans l’Esprit ;<br>car la lettre tue, mais l’Esprit donne la vie.<br></p>
+<p>– Parole du Seigneur.</p>
+</div>
+<div class="lecture active_lecture" id="messe1_lecture4">
+<h4>Évangile</h4>
+<h5>« L’Époux est avec eux » (Mc 2, 18-22)</h5>
+<p><strong>Alléluia. Alléluia.</strong><br>Elle est vivante, énergique, la parole de Dieu 
+<br>elle juge des intentions et des pensées du cœur.<br><strong>Alléluia.</strong> (cf. He 4, 12)</p>
+<p>Évangile de Jésus Christ selon saint Marc</p>
+<p>En ce temps-là,
+<br>comme les disciples de Jean le Baptiste et les pharisiens jeûnaient,
+<br>on vint demander à Jésus :
+<br>« Pourquoi, alors que les disciples de Jean
+et les disciples des Pharisiens jeûnent,
+tes disciples ne jeûnent-ils pas ? »
+<br>    Jésus leur dit :
+<br>« Les invités de la noce pourraient-ils jeûner,
+<br>pendant que l’Époux est avec eux ?
+<br>Tant qu’ils ont l’Époux avec eux,
+<br>ils ne peuvent pas jeûner.
+<br>    Mais des jours viendront où l’Époux leur sera enlevé ;
+<br>alors, ce jour-là, ils jeûneront.
+<br><br>    Personne ne raccommode un vieux vêtement
+avec une pièce d’étoffe neuve ;
+<br>autrement le morceau neuf ajouté tire sur le vieux tissu
+<br>et la déchirure s’agrandit.
+<br>    Ou encore, personne ne met du vin nouveau
+dans de vieilles outres ;
+<br>car alors, le vin fera éclater les outres,
+<br>et l’on perd à la fois le vin et les outres.
+<br>À vin nouveau, outres neuves. »</p>
+<p>– Acclamons la Parole de Dieu.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script src="./files/front.ead14a80.js.download"></script>
+    <script type="text/javascript" id="">window.axeptioSettings={clientId:"647741ec3eba371d6c538362"};(function(a,b){var c=a.getElementsByTagName(b)[0];a=a.createElement(b);a.async=!0;a.src="//static.axept.io/sdk.js";c.parentNode.insertBefore(a,c)})(document,"script");</script>
+</body></html>
