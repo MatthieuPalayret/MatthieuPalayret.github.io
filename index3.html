@@ -80,17 +80,17 @@
             var outputLinkContainerArabic = document.getElementById('outputLinkArabic');
             var link = generateLink(selectedDate);
             if(link == "8DTO" || link == "9DTO" || link == "8VTO") {
-                if(link == "8VTO") {
+                if(link == "8VTO") { // Problème pour les textes de la messe : année impaire !
                     outputLinkContainerArabic.href = "http://www.ibreviary.com/m2/breviario.php?b=1&lang=fr&date=2011-03-04";
                 } else {
                     outputLinkContainer.href = "https://matthieupalayret.github.io/" + link + "/laudes.html";
                 }
                 outputLinkContainer.innerText = 'Prière du jour sur AELF.org - ' + selectedDate.getFullYear() + '-' + (selectedDate.getMonth()+1) + '-' + selectedDate.getDate();
-                if(link == "9DTO") {
+                if(link == "9DTO") { // Problème pour les textes de la messe : année A !
                     outputLinkContainerArabic.href = "http://www.ibreviary.com/m2/breviario.php?b=1&lang=ar&date=2011-03-06";
-                } else if(link == "8DTO") {
+                } else if(link == "8DTO") { // Problème pour les textes de la messe : année A !
                     outputLinkContainerArabic.href = "http://www.ibreviary.com/m2/breviario.php?b=1&lang=ar&date=2011-02-27";
-                } else if(link == "8VTO") {
+                } else if(link == "8VTO") { // Problème pour les textes de la messe : année impaire !
                     outputLinkContainerArabic.href = "http://www.ibreviary.com/m2/breviario.php?b=1&lang=ar&date=2011-03-04";
                 }
                 outputLinkContainerArabic.innerText = 'صلوات الساعات في إيبريفياري - ' + selectedDate.getFullYear() + '-' + (selectedDate.getMonth()+1) + '-' + selectedDate.getDate();
